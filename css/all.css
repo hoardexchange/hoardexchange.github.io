@@ -1048,6 +1048,33 @@ a.generalButton,
     text-align: center; }
     .teaserBox .teaserTitle h2 {
       margin-bottom: 0; }
+  .teaserBox .teaserTitleLine {
+    position: relative;
+    padding-bottom: 21px;
+    margin-bottom: 23px; }
+    .teaserBox .teaserTitleLine:after {
+      content: '';
+      height: 2px;
+      width: 40px;
+      background: #af1920;
+      position: absolute;
+      top: auto;
+      right: auto;
+      bottom: 0;
+      left: 50%;
+      z-index: 1;
+      transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      -ms-transform: translateX(-50%); }
+  .teaserBox .teaserDescription {
+    text-align: center;
+    text-transform: uppercase; }
+    .teaserBox .teaserDescription p {
+      letter-spacing: 1px; }
+    .teaserBox .teaserDescription > *:last-child {
+      margin-bottom: 0; }
   .teaserBox .teaserItem {
     text-align: center;
     margin-top: 47px; }
@@ -1071,6 +1098,10 @@ a.generalButton,
     /* 3 columns */ }
     .teaserBox .teaserTitle {
       margin-bottom: 43px; }
+    .teaserBox .teaserTitleLine {
+      margin-bottom: 21px; }
+    .teaserBox .teaserDescription {
+      margin-bottom: 32px; }
     .teaserBox .teaserItemImage {
       margin-bottom: 34px; }
     .teaserBox.teaserThreeColumn {
@@ -1882,32 +1913,33 @@ a.generalButton,
   .ico-github:hover, .ico-github:active, .ico-github:focus {
     color: #fff; }
 
-.followMeWrapper {
-  display: inline-block;
-  margin-top: 40px; }
-  .followMeWrapper .ico-social {
-    float: left;
-    position: relative;
-    transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease; }
-  .followMeWrapper .emailContact {
-    clear: both;
-    display: block;
-    margin: 9px 0;
-    font-size: 16px; }
-    .followMeWrapper .emailContact a {
-      color: #fff; }
-      .followMeWrapper .emailContact a:hover {
-        color: #f09789; }
+.followMeWrapper .ico-social {
+  float: left;
+  position: relative;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease; }
+
+.followMeWrapper .emailContact {
+  clear: both;
+  display: block;
+  margin: 9px 0;
+  font-size: 16px; }
+  .followMeWrapper .emailContact a {
+    color: #fff; }
+    .followMeWrapper .emailContact a:hover {
+      color: #f09789; }
 
 .listSocial {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 20px; }
   .listSocial li {
     display: inline-block;
-    margin-right: 22px; }
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-bottom: 15px; }
     .listSocial li:last-child {
       margin-right: 0; }
 
@@ -1983,18 +2015,72 @@ a.generalButton,
   -o-transform: translateY(-5px);
   -ms-transform: translateY(-5px); }
 
+.footerLinks ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .footerLinks ul li {
+    display: inline-block;
+    position: relative;
+    padding: 0 12px 5px; }
+    .footerLinks ul li:after {
+      content: '';
+      height: 12px;
+      width: 1px;
+      background: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      top: 4px;
+      right: 0;
+      bottom: auto;
+      left: auto;
+      z-index: 1; }
+    .footerLinks ul li:last-child {
+      padding-right: 0; }
+      .footerLinks ul li:last-child:after {
+        display: none; }
+    .footerLinks ul li a {
+      color: #ffffff;
+      font-size: 16px; }
+      .footerLinks ul li a:hover {
+        color: #f09789; }
+
+.footerCredit {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 65px; }
+  .footerCredit i {
+    margin: 0 1px;
+    color: #af1920; }
+
 @media (min-width: 992px) {
   .footer {
-    padding: 83px 0 135px; }
+    padding: 83px 0 29px; }
   .followMeWrapper .emailContact {
-    float: left;
-    clear: none; }
+    display: inline-block;
+    margin: 0; }
   .listSocial {
-    float: left; }
-    .listSocial li:last-child {
-      margin-right: 22px; }
+    margin-bottom: 10px; }
   .newsletterWrapper .form-control {
-    width: 410px; } }
+    width: 410px; }
+  .footerLinks {
+    display: inline-block;
+    margin-left: 10px; }
+    .footerLinks ul li:after {
+      top: 7px; }
+    .footerLinks ul li:first-child:before {
+      content: '';
+      height: 12px;
+      width: 1px;
+      background: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      top: 7px;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      z-index: 1; }
+  .footerCredit {
+    margin-top: 86px; } }
 
 /* font size */
 /* timimg */

@@ -23,9 +23,6 @@
 }
 
 .followMeWrapper {
-    display: inline-block;
-    margin-top: 40px;
-
     .ico-social {
         float: left;
         position: relative;
@@ -51,9 +48,12 @@
 .listSocial {
     list-style: none;
     padding: 0;
+    margin-bottom:20px;
     li {
         display: inline-block;
-        margin-right: 22px;
+        margin-left:7px;
+        margin-right: 7px;
+        margin-bottom:15px;
         &:last-child {
             margin-right: 0;
         }
@@ -151,31 +151,102 @@
     }
 }
 
+.footerLinks {
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            position: relative;
+            padding: 0 12px 5px;
+
+            &:after {
+                content: '';
+                height: 12px;
+                width: 1px;
+                background: rgba(#ffffff,0.5);
+                @include position(absolute,4px,0,auto,auto,1);
+            }
+
+            &:last-child {
+                padding-right: 0;
+
+                &:after {
+                    display: none;
+                }
+            }
+
+            a {
+                color: #ffffff;
+                font-size: 16px;
+
+                &:hover {
+                    color: #f09789;
+                }
+            }
+        }
+    }
+}
+
+.footerCredit {
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 65px;
+
+    i {
+        margin: 0 1px;
+        color: #af1920;
+    }
+}
+
 @media (min-width: $tabletSize) {
 }
 
 @media (min-width: $labtopSize) {
     .footer {
-        padding: 83px 0 135px;
+        padding: 83px 0 29px;
     }
     .followMeWrapper {
         .emailContact {
-            float: left;
-            clear: none;
+            display:inline-block;
+            margin:0;
         }
     }
     .listSocial {
-        float: left;
-        li {
-            &:last-child {
-                margin-right: 22px;
-            }
-        }
+        margin-bottom:10px;
     }
     .newsletterWrapper {
         .form-control {
             width: 410px;
         }
+    }
+    .footerLinks {
+        display: inline-block;
+        margin-left: 10px;
+
+        ul {
+            li {
+                &:after {
+                    top: 7px;
+                }
+
+                &:first-child {
+                    &:before {
+                        content: '';
+                        height: 12px;
+                        width: 1px;
+                        background: rgba(#ffffff,0.5);
+                        @include position(absolute,7px,auto,auto,0,1);
+                    }
+                }
+            }
+        }
+    }
+    .footerCredit{
+        margin-top:86px;
     }
 }
 
