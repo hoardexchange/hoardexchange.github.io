@@ -1,0 +1,50 @@
+/* font size */
+/* timimg */
+/* Structure */
+/* General color */
+/* font color */
+/* page sections background color */
+/*alert Message*/
+.investorSection {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 41px;
+  padding-bottom: 47px; }
+  .investorSection .investorTitle {
+    margin-bottom: 68px; }
+    .investorSection .investorTitle h2 {
+      margin-bottom: 0; }
+  .investorSection .investorItem {
+    margin-top: 69px; }
+    .investorSection .investorItem:nth-child(1) {
+      margin-top: 0; }
+  .investorSection .investorItemImage {
+    margin-bottom: 29px; }
+    .investorSection .investorItemImage .helper {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle; }
+    .investorSection .investorItemImage img {
+      vertical-align: middle; }
+  .investorSection .investorItemTitle {
+    font-family: 'Montserrat-Bold';
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto; }
+
+@media (min-width: 992px) {
+  .investorSection {
+    padding-top: 104px;
+    padding-bottom: 104px; }
+    .investorSection .investorTitle {
+      margin-bottom: 60px; }
+    .investorSection .investorItem {
+      margin-top: 0; } }

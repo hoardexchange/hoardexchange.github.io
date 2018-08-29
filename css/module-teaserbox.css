@@ -1,0 +1,76 @@
+/* font size */
+/* timimg */
+/* Structure */
+/* General color */
+/* font color */
+/* page sections background color */
+/*alert Message*/
+.teaserBox {
+  padding-top: 31px;
+  padding-bottom: 47px;
+  /* 3 columns */ }
+  .teaserBox .teaserTitle {
+    text-align: center; }
+    .teaserBox .teaserTitle h2 {
+      margin-bottom: 0; }
+  .teaserBox .teaserTitleLine {
+    position: relative;
+    padding-bottom: 21px;
+    margin-bottom: 23px; }
+    .teaserBox .teaserTitleLine:after {
+      content: '';
+      height: 2px;
+      width: 40px;
+      background: #af1920;
+      position: absolute;
+      top: auto;
+      right: auto;
+      bottom: 0;
+      left: 50%;
+      z-index: 1;
+      transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      -ms-transform: translateX(-50%); }
+  .teaserBox .teaserDescription {
+    text-align: center;
+    text-transform: uppercase; }
+    .teaserBox .teaserDescription p {
+      letter-spacing: 1px; }
+    .teaserBox .teaserDescription > *:last-child {
+      margin-bottom: 0; }
+  .teaserBox .teaserItem {
+    text-align: center;
+    margin-top: 47px; }
+  .teaserBox .teaserItemImage {
+    margin-bottom: 10px;
+    margin-bottom: 39px; }
+  .teaserBox .teaserItemTitle {
+    margin-bottom: 5px; }
+  .teaserBox .teaserItemInfo {
+    margin-bottom: 0; }
+  .teaserBox.teaserThreeColumn {
+    padding-top: 46px;
+    padding-bottom: 50px; }
+    .teaserBox.teaserThreeColumn .teaserItemImage {
+      margin-bottom: 19px; }
+
+@media (min-width: 992px) {
+  .teaserBox {
+    padding-top: 67px;
+    padding-bottom: 106px;
+    /* 3 columns */ }
+    .teaserBox .teaserTitle {
+      margin-bottom: 43px; }
+    .teaserBox .teaserTitleLine {
+      margin-bottom: 21px; }
+    .teaserBox .teaserDescription {
+      margin-bottom: 32px; }
+    .teaserBox .teaserItemImage {
+      margin-bottom: 34px; }
+    .teaserBox.teaserThreeColumn {
+      padding-top: 104px;
+      padding-bottom: 105px; }
+      .teaserBox.teaserThreeColumn .teaserItemImage {
+        margin-bottom: 12px; } }

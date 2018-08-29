@@ -1,0 +1,177 @@
+/* font size */
+/* timimg */
+/* Structure */
+/* General color */
+/* font color */
+/* page sections background color */
+/*alert Message*/
+.contributePeriod {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 47px;
+  padding-bottom: 53px; }
+  .contributePeriod .periodTitle {
+    margin-bottom: 30px; }
+    .contributePeriod .periodTitle h2 {
+      margin-bottom: 0; }
+  .contributePeriod .textStart {
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 37px; }
+  .contributePeriod .startDate {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 38px; }
+  .contributePeriod .periodPointSection {
+    margin-bottom: 35px; }
+  .contributePeriod .periodPointStart, .contributePeriod .periodPointDots, .contributePeriod .periodPointEnd {
+    display: inline-block;
+    vertical-align: middle; }
+  .contributePeriod .periodPointStart {
+    text-align: right;
+    margin-right: 5px; }
+  .contributePeriod .periodPointEnd {
+    text-align: left;
+    margin-left: 5px; }
+  .contributePeriod .periodPointText {
+    font-family: 'Montserrat-Bold';
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .contributePeriod .periodPointDate {
+    text-transform: uppercase;
+    font-size: 16px; }
+  .contributePeriod .periodPointDots {
+    font-size: 0;
+    white-space: nowrap; }
+    .contributePeriod .periodPointDots > * {
+      display: inline-block;
+      vertical-align: middle; }
+    .contributePeriod .periodPointDots .pointDot {
+      width: 13px;
+      height: 13px;
+      background: #838282;
+      margin: 0 8px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%; }
+      .contributePeriod .periodPointDots .pointDot.active {
+        background: #af1920; }
+
+.ClassyCountdown-wrapper {
+  font-size: 0;
+  text-align: center; }
+  .ClassyCountdown-wrapper > div {
+    position: relative;
+    display: inline-block;
+    width: 140px !important;
+    height: 140px !important;
+    margin-bottom: 102px; }
+    .ClassyCountdown-wrapper > div > div {
+      display: block !important; }
+  .ClassyCountdown-wrapper .ClassyCountdown-value {
+    display: block;
+    margin: 0 !important;
+    position: absolute;
+    top: 34px;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0); }
+    .ClassyCountdown-wrapper .ClassyCountdown-value > div {
+      font-family: 'Roboto-Thin';
+      font-size: 48px !important;
+      color: #ffffff; }
+    .ClassyCountdown-wrapper .ClassyCountdown-value > span {
+      display: block;
+      font-family: 'Montserrat-Bold';
+      font-size: 16px !important;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 62px; }
+  .ClassyCountdown-wrapper .ClassyCountdown-days {
+    margin-right: 5px; }
+  .ClassyCountdown-wrapper .ClassyCountdown-hours {
+    margin-left: 5px; }
+  .ClassyCountdown-wrapper .ClassyCountdown-minutes,
+  .ClassyCountdown-wrapper .ClassyCountdown-seconds {
+    visibility: hidden;
+    position: absolute;
+    z-index: -1000; }
+
+.countDownLabel {
+  font-size: 0; }
+  .countDownLabel span {
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Montserrat-Bold';
+    font-size: 16px;
+    width: 140px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 5px; }
+    .countDownLabel span.dayLabel {
+      margin-left: 0; }
+    .countDownLabel span.hourLabel {
+      margin-right: 0; }
+    .countDownLabel span.minuteLabel {
+      display: none; }
+    .countDownLabel span.secondLabel {
+      display: none; }
+
+@media (min-width: 992px) {
+  .contributePeriod {
+    padding-top: 104px;
+    padding-bottom: 109px; }
+    .contributePeriod .textStart {
+      margin-bottom: 56px; }
+    .contributePeriod .startDate {
+      font-size: 18px;
+      margin-bottom: 53px; }
+    .contributePeriod .periodPointSection {
+      margin-bottom: 39px; }
+    .contributePeriod .periodPointStart {
+      margin-right: 28px; }
+    .contributePeriod .periodPointEnd {
+      margin-left: 24px; }
+    .contributePeriod .periodPointText {
+      font-size: 20px; }
+    .contributePeriod .periodPointDate {
+      font-size: 18px; }
+    .contributePeriod .periodPointDots i {
+      font-size: 32px;
+      margin-right: 5px; }
+    .contributePeriod .periodPointDots .pointDot {
+      margin: 0 6px; }
+  .ClassyCountdown-wrapper > div {
+    margin: 0 28px 113px 28px; }
+  .ClassyCountdown-wrapper .ClassyCountdown-days {
+    margin-right: 28px; }
+  .ClassyCountdown-wrapper .ClassyCountdown-hours {
+    margin-left: 28px; }
+  .ClassyCountdown-wrapper .ClassyCountdown-minutes,
+  .ClassyCountdown-wrapper .ClassyCountdown-seconds {
+    visibility: visible;
+    position: relative;
+    z-index: 0; }
+  .countDownLabel span {
+    margin: 0 28px; }
+    .countDownLabel span.dayLabel {
+      margin-left: 28px; }
+    .countDownLabel span.hourLabel {
+      margin-right: 28px; }
+    .countDownLabel span.minuteLabel {
+      display: inline-block; }
+    .countDownLabel span.secondLabel {
+      display: inline-block; } }
+
+@media (min-width: 1200px) {
+  .contributePeriod .periodPointDots .pointDot {
+    margin: 0 8px; } }

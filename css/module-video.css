@@ -1,0 +1,91 @@
+/* font size */
+/* timimg */
+/* Structure */
+/* General color */
+/* font color */
+/* page sections background color */
+/*alert Message*/
+.videoSection {
+  position: relative;
+  height: 421px;
+  background-color: #333a40; }
+  .videoSection .videoBg {
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    z-index: 1; }
+    .videoSection .videoBg .videoBgImage {
+      min-height: 100%;
+      min-width: 100%;
+      max-width: none;
+      width: 1355px;
+      position: absolute;
+      top: 0;
+      right: auto;
+      bottom: auto;
+      left: 50%;
+      z-index: 1;
+      transform: translate(-50%, 0);
+      -moz-transform: translate(-50%, 0);
+      -webkit-transform: translate(-50%, 0);
+      -o-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0); }
+  .videoSection .texture {
+    background: url("../images/texture.png") repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2; }
+  .videoSection .videoControlSection {
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    z-index: 3;
+    transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%); }
+    .videoSection .videoControlSection .videoControlText {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: right; }
+      .videoSection .videoControlSection .videoControlText h2 {
+        font-family: 'Roboto-Thin';
+        font-size: 36px;
+        text-transform: none; }
+      .videoSection .videoControlSection .videoControlText p {
+        margin-bottom: 0;
+        font-size: 16px;
+        letter-spacing: 2px; }
+    .videoSection .videoControlSection .videoToggle {
+      color: #ffffff;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 63px;
+      margin-left: 10px; }
+
+@media (min-width: 992px) {
+  .videoSection {
+    height: 500px; }
+    .videoSection .videoBg .videoBgImage {
+      width: auto; }
+    .videoSection .videoControlSection .videoControlText h2 {
+      font-size: 72px;
+      line-height: normal;
+      margin-bottom: 0; }
+    .videoSection .videoControlSection .videoToggle {
+      font-size: 96px;
+      margin-left: 15px;
+      margin-top: 12px; } }
