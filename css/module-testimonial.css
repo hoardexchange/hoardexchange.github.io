@@ -7,14 +7,16 @@
 /*alert Message*/
 .testimonial {
   text-align: center;
-  padding-top: 56px;
+  /*    padding-top: 56px;*/
+  padding-top: 85px;
   padding-bottom: 35px; }
   .testimonial .testimonialItem {
     outline: none; }
   .testimonial blockquote {
     position: relative;
     border: none;
-    padding: 42px 0 0 0; }
+    padding: 42px 0 0 0;
+    user-select: text !important; }
   .testimonial .quoteSign {
     font-family: 'Montserrat-Bold';
     font-size: 75px;
@@ -37,6 +39,7 @@
     margin-top: 29px; }
   .testimonial .quoteAuthorImage {
     display: inline-block;
+    user-select: none !important;
     width: 96px;
     height: 96px;
     overflow: hidden;
@@ -84,9 +87,13 @@
 
 @media (min-width: 992px) {
   .testimonial {
-    padding-top: 105px;
-    padding-bottom: 88px; }
+    /*padding-top: 105px;*/
+    /*padding-top: 40px;
+        padding-bottom: 88px;*/
+    padding-top: 85px;
+    padding-bottom: 50px; }
     .testimonial .testimonialList:before {
+      /*display: none;*/
       content: '';
       width: 20px;
       background: white;
@@ -112,6 +119,7 @@
       left: 0;
       z-index: 1; }
     .testimonial .testimonialList:after {
+      /*display: none;*/
       content: '';
       width: 20px;
       background: white;

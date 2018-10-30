@@ -7,12 +7,13 @@
 /*alert Message*/
 .teaserBox {
   padding-top: 31px;
-  padding-bottom: 47px;
   /* 3 columns */ }
+  .teaserBox .teaserBox__learmore {
+    margin-top: 5px; }
   .teaserBox .teaserTitle {
     text-align: center; }
     .teaserBox .teaserTitle h2 {
-      margin-bottom: 0; }
+      margin-bottom: 20px; }
   .teaserBox .teaserTitleLine {
     position: relative;
     padding-bottom: 21px;
@@ -74,3 +75,9 @@
       padding-bottom: 105px; }
       .teaserBox.teaserThreeColumn .teaserItemImage {
         margin-bottom: 12px; } }
+
+.l-teaserBox {
+  padding-bottom: 20px; }
+  @media (min-width: 992px) {
+    .l-teaserBox {
+      padding-bottom: 40px; } }

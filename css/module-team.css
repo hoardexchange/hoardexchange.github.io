@@ -5,23 +5,23 @@
 /* font color */
 /* page sections background color */
 /*alert Message*/
-.teamSection {
+.teamSection, .section-benefits {
   text-align: center;
   padding-bottom: 61px;
   padding-top: 46px; }
-  .teamSection .teamTitle {
+  .teamSection .teamTitle, .section-benefits .teamTitle {
     margin-bottom: 34px; }
-    .teamSection .teamTitle h2 {
+    .teamSection .teamTitle h2, .section-benefits .teamTitle h2 {
       margin-bottom: 0; }
-  .teamSection .teamItem {
+  .teamSection .teamItem, .section-benefits .teamItem {
     min-height: 96px;
     margin-top: 37px; }
-    .teamSection .teamItem:nth-child(1) {
+    .teamSection .teamItem:nth-child(1), .section-benefits .teamItem:nth-child(1) {
       margin-top: 0; }
-  .teamSection .teamItemWraper {
+  .teamSection .teamItemWraper, .section-benefits .teamItemWraper {
     font-size: 0;
     cursor: pointer; }
-    .teamSection .teamItemWraper.active {
+    .teamSection .teamItemWraper.active, .section-benefits .teamItemWraper.active {
       width: 100%;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
@@ -31,15 +31,15 @@
       bottom: auto;
       left: 0;
       z-index: 0; }
-    .teamSection .teamItemWraper .teamItemImage {
+    .teamSection .teamItemWraper .teamItemImage, .section-benefits .teamItemWraper .teamItemImage {
       position: relative;
       display: inline-block;
       vertical-align: middle; }
-      .teamSection .teamItemWraper .teamItemImage:hover .teamItemImageWrapper {
+      .teamSection .teamItemWraper .teamItemImage:hover .teamItemImageWrapper, .section-benefits .teamItemWraper .teamItemImage:hover .teamItemImageWrapper {
         -webkit-box-shadow: 0 0 11px 4px rgba(0, 0, 0, 0.3);
         -moz-box-shadow: 0 0 11px 4px rgba(0, 0, 0, 0.3);
         box-shadow: 0 0 11px 4px rgba(0, 0, 0, 0.3); }
-      .teamSection .teamItemWraper .teamItemImage .teamItemImageWrapper {
+      .teamSection .teamItemWraper .teamItemImage .teamItemImageWrapper, .section-benefits .teamItemWraper .teamItemImage .teamItemImageWrapper {
         width: 96px;
         height: 96px;
         overflow: hidden;
@@ -50,9 +50,9 @@
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%; }
-      .teamSection .teamItemWraper .teamItemImage img {
+      .teamSection .teamItemWraper .teamItemImage img, .section-benefits .teamItemWraper .teamItemImage img {
         width: 100%; }
-    .teamSection .teamItemWraper .signPlus {
+    .teamSection .teamItemWraper .signPlus, .section-benefits .teamItemWraper .signPlus {
       width: 17px;
       height: 17px;
       background: #af1920;
@@ -73,24 +73,24 @@
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%; }
-      .teamSection .teamItemWraper .signPlus i {
+      .teamSection .teamItemWraper .signPlus i, .section-benefits .teamItemWraper .signPlus i {
         margin-top: 4px;
         display: inline-block; }
-    .teamSection .teamItemWraper .teamItemInfo {
+    .teamSection .teamItemWraper .teamItemInfo, .section-benefits .teamItemWraper .teamItemInfo {
       display: inline-block;
       vertical-align: middle;
       width: 179px;
       margin-left: 14px;
       text-align: left; }
-    .teamSection .teamItemWraper .teamItemName {
+    .teamSection .teamItemWraper .teamItemName, .section-benefits .teamItemWraper .teamItemName {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 0; }
-    .teamSection .teamItemWraper .teamItemPosition {
+    .teamSection .teamItemWraper .teamItemPosition, .section-benefits .teamItemWraper .teamItemPosition {
       font-family: 'Roboto-Regular';
       font-size: 16px;
       color: #c7002c; }
-  .teamSection .teamItemDetail {
+  .teamSection .teamItemDetail, .teamSection .benefit-detail, .section-benefits .teamItemDetail, .section-benefits .benefit-detail {
     position: relative;
     z-index: 1;
     background: #af1920;
@@ -112,7 +112,7 @@
     -moz-opacity: 0;
     -khtml-opacity: 0;
     opacity: 0; }
-    .teamSection .teamItemDetail.open {
+    .teamSection .teamItemDetail.open, .teamSection .benefit-detail.open, .section-benefits .teamItemDetail.open, .section-benefits .benefit-detail.open {
       max-height: 500px;
       transform: scale(1, 1);
       -moz-transform: scale(1, 1);
@@ -128,7 +128,7 @@
       -moz-opacity: 1;
       -khtml-opacity: 1;
       opacity: 1; }
-    .teamSection .teamItemDetail .initialCircleContent {
+    .teamSection .teamItemDetail .initialCircleContent, .teamSection .benefit-detail .initialCircleContent, .section-benefits .teamItemDetail .initialCircleContent, .section-benefits .benefit-detail .initialCircleContent {
       padding-top: 20px;
       padding-bottom: 20px;
       line-height: 27px;
@@ -172,35 +172,35 @@
     }
 }*/
 @media (min-width: 992px) {
-  .teamSection {
+  .teamSection, .section-benefits {
     padding-bottom: 141px;
     padding-top: 87px; }
-    .teamSection .teamTitle {
+    .teamSection .teamTitle, .section-benefits .teamTitle {
       margin-bottom: 77px; }
-    .teamSection .teamItem {
+    .teamSection .teamItem, .section-benefits .teamItem {
       height: 312px;
       margin-top: 106px; }
-      .teamSection .teamItem:nth-child(2), .teamSection .teamItem:nth-child(3) {
+      .teamSection .teamItem:nth-child(2), .teamSection .teamItem:nth-child(3), .section-benefits .teamItem:nth-child(2), .section-benefits .teamItem:nth-child(3) {
         margin-top: 0; }
-    .teamSection .teamItemWraper.active {
+    .teamSection .teamItemWraper.active, .section-benefits .teamItemWraper.active {
       position: relative; }
-    .teamSection .teamItemWraper .teamItemImage {
+    .teamSection .teamItemWraper .teamItemImage, .section-benefits .teamItemWraper .teamItemImage {
       margin-bottom: 29px; }
-      .teamSection .teamItemWraper .teamItemImage .teamItemImageWrapper {
+      .teamSection .teamItemWraper .teamItemImage .teamItemImageWrapper, .section-benefits .teamItemWraper .teamItemImage .teamItemImageWrapper {
         width: 221px;
         height: 221px; }
-    .teamSection .teamItemWraper .signPlus {
+    .teamSection .teamItemWraper .signPlus, .section-benefits .teamItemWraper .signPlus {
       width: 36px;
       height: 36px;
       font-size: 17px;
       bottom: -17px; }
-      .teamSection .teamItemWraper .signPlus i {
+      .teamSection .teamItemWraper .signPlus i, .section-benefits .teamItemWraper .signPlus i {
         margin-top: 9px; }
-    .teamSection .teamItemWraper .teamItemInfo {
+    .teamSection .teamItemWraper .teamItemInfo, .section-benefits .teamItemWraper .teamItemInfo {
       width: 100%;
       margin-left: 0;
       text-align: center; }
-    .teamSection .teamItemDetail {
+    .teamSection .teamItemDetail, .teamSection .benefit-detail, .section-benefits .teamItemDetail, .section-benefits .benefit-detail {
       display: none !important;
       font-family: 'Roboto-Light';
       width: 330px;
@@ -236,7 +236,7 @@
       -moz-opacity: 0;
       -khtml-opacity: 0;
       opacity: 0; }
-      .teamSection .teamItemDetail.open {
+      .teamSection .teamItemDetail.open, .teamSection .benefit-detail.open, .section-benefits .teamItemDetail.open, .section-benefits .benefit-detail.open {
         max-height: none;
         transform: translateX(-46%) translateZ(0) scale(1, 1);
         -moz-transform: translateX(-46%) translateZ(0) scale(1, 1);
@@ -252,7 +252,7 @@
         -moz-opacity: 1;
         -khtml-opacity: 1;
         opacity: 1; }
-      .teamSection .teamItemDetail p {
+      .teamSection .teamItemDetail p, .teamSection .benefit-detail p, .section-benefits .teamItemDetail p, .section-benefits .benefit-detail p {
         line-height: 28px;
         padding: 0; }
   .closeButton {
@@ -346,7 +346,7 @@
       right: auto;
       bottom: auto;
       left: 50%;
-      z-index: 0;
+      z-index: 1;
       transform: translate(-50%, -50%);
       -moz-transform: translate(-50%, -50%);
       -webkit-transform: translate(-50%, -50%);

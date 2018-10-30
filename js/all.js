@@ -320,6 +320,20 @@ function Header() {
     }
 
     this.scrollToSection = function () {
+
+        if(getUrlVars()["section"]){
+            setTimeout(function(){
+                var sectionID = getUrlVars()["section"];
+                var headerHeight = context.header.outerHeight(true);
+//377
+                $('html, body').animate({
+                    scrollTop: $("#"+sectionID).offset().top - headerHeight
+                }, context.animateTime);
+            },500);
+
+        }
+
+
         this.scrollClick.on('click', function (e) {
             e.preventDefault();
             var sectionID = $(this).attr('data-scrollto');
@@ -329,6 +343,7 @@ function Header() {
                 scrollTop: $('#' + sectionID).offset().top - headerHeight
             }, context.animateTime);
         });
+
     }
 
     this.toggleSubMenu = function () {
@@ -356,6 +371,14 @@ var header;
 $(document).ready(function () {
     header = new Header();
 });
+
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
 $(window).scroll(function (e) {
     buttonParallax();
 });
@@ -561,6 +584,124 @@ var team;
 $(document).ready(function () {
     team = new Team();
 });
+function Benefits() {
+
+    var context;
+    this.html = $('html');
+    this.body = $('body');
+    this.teamToggleButton = $('.benefit-wrapper');
+    this.closeButton = $('.closeToggle');
+
+    this.init = function () {
+        this.onScreenChange();
+        this.onWindowLoad();
+        this.toggleDetailItem();
+    }
+
+    this.onScreenChange = function () {
+        $(window).resize(function () {
+            context.viewPort();
+            
+        });
+    }
+
+    this.onWindowLoad = function () {
+        $(window).load(function () {
+
+        });
+    }
+
+    this.viewPort = function () {
+        /* Each brouser have different vertical scrollbar */
+        var scrollBarWidth = window.innerWidth - this.body.width();
+        var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+        var isChrome = !!window.chrome && !!window.chrome.webstore;
+        if (!is_safari) {
+            if ($(window).width() > (992 - scrollBarWidth)) {
+                this.isDestop = true;
+            } else {
+                this.isDestop = false;
+            }
+        } else if (isChrome) {
+            if ($(window).width() > (992 - scrollBarWidth)) {
+                this.isDestop = true;
+            } else {
+                this.isDestop = false;
+            }
+        } else {
+            if ($(window).width() > 992) {
+                this.isDestop = true;
+            } else {
+                this.isDestop = false;
+            }
+        }
+    }
+
+    this.toggleDetailItem = function () {
+        this.teamToggleButton.on('click', function () {
+            if ($(this).hasClass('active')) {
+                //context.closeDetail($(this));
+            } else {
+                context.openDetail($(this));
+                
+            }
+        });
+
+        this.closeButton.on('click', function () {
+            var currentElement = $(this).parent('.benefit-detail').siblings('.benefit-wrapper');
+            context.closeDetail(currentElement);
+        });
+    }
+
+    this.openDetail = function (element) {
+        element.addClass('active');
+        element.siblings('.benefit-detail').addClass('open');
+
+        /*close Sibling items*/
+        element.parent().siblings('.benefit-item').find('.benefit-detail').removeClass('open');
+
+        setTimeout(function () {
+            element.parent().siblings('.benefit-item').find('.benefit-detail').removeClass('active');
+            
+        }, 300);
+
+
+        /* add data to big circle */
+        var content = element.siblings('.benefit-detail').children('.initialCircleContent').children().clone();
+        var circleTheme = element.attr('data-themeCircle');
+        $('.teamDetailPerson').addClass('open');
+        $('.detailPerson').addClass('open');
+        $('.detailPersonText').html(content);
+        /*if (circleTheme == 'red'){
+            $('.detailPerson').removeClass('whiteCircle');
+        } else {
+            $('.detailPerson').addClass('whiteCircle');
+        }*/
+    }
+
+    this.closeDetail = function (element) {
+        element.siblings('.benefit-detail').removeClass('open');
+        setTimeout(function () {
+            element.removeClass('active');
+        }, 300);
+
+        /* close big circle */
+        setTimeout(function () { $('.teamDetailPerson').removeClass('open'); }, 300);
+        $('.detailPerson').removeClass('open');
+        $('.benefit-detail').removeClass('open');
+        $('.benefit-wrapper').removeClass('active');
+    }
+
+    context = this;
+    this.init();
+
+}
+
+var team;
+
+$(document).ready(function () {
+    team = new Benefits();
+});
 function TopSlideshow(element) {
     var context;
     this.carousel = $(element);
@@ -596,7 +737,7 @@ function TopSlideshow(element) {
         this.carousel.slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            draggable: true,
+            draggable: false,
             focusOnSelect: false,
             pauseOnFocus: false,
             pauseOnHover: false,
