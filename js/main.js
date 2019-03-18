@@ -147,10 +147,9 @@ $(document).ready(function(){
 	/* Modal triggers */
   $(".trigger-videModal").click(function(){
     $("#videoModal").modal("show");
-		$('#video-explanation')[0].play();
   });
   $("#videoModal").on('hidden.bs.modal', function(){
-		$('#video-explanation')[0].pause();
+		jQuery('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
   });
 
   $(".trigger-soonModal").click(function(){
@@ -166,8 +165,8 @@ $(document).ready(function(){
   });
 
 
-
 	
+
 });
 
 
