@@ -205,6 +205,9 @@ a:hover {
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 
 
+button {
+	border: none;
+}
 
 
 
@@ -1713,10 +1716,6 @@ ul.clean li {
 	padding-left: 120px;
 }
 
-/* remove this to uncover Memory of Us game: */
-#games .game-memory {
-	display: none;
-}
 
 
 .documentation {
@@ -1996,10 +1995,13 @@ footer .links {
 footer .links span {
 	color: #85878F;
 	font-weight: 900;
-	margin-right: 54px;
+	margin-right: 30px;
+}
+footer a:hover {
+	text-decoration: none;
 }
 footer .links .col-copy a {
-	margin-right: 50px;
+	margin-right: 30px;
 	color: #85878F;
 }
 footer .links .col-copy a:last-child {
@@ -2009,13 +2011,26 @@ footer .links .col-social {
 	text-align: right;
 }
 footer .links .col-social img {
-	max-width: 20px;
+	max-height: 20px;
+	max-width: 24px;
 	fill: #f00;
 }
 footer .links .col-social a {
 	margin-left: 25px;
 }
-
+footer .links .textlink {
+	font-weight: normal !important;
+	margin-right: 0px !important;
+}
+footer .links .textlink span {
+	font-weight: normal !important;
+	margin-right: 0px !important;
+	vertical-align: -3%;
+	font-size: 13px;
+}
+footer .textlink img {
+	margin-left: 5px;
+}
 
 
 
@@ -2486,3 +2501,54 @@ form .error {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NEWSLETTER */
+
+#newsletter {
+	padding-top: 80px;
+	padding-bottom: 100px;
+/*	background: #f7f7f8;*/
+}
+#newsletter h2 {
+	padding-bottom: 20px;
+}
+#newsletter .title-comment {
+	margin-top: 22px;
+}
+#newsletter input {
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+}
+#newsletter button {
+	width: 100%;
+	margin-bottom: 20px;
+}
+#newsletter #errorSubscribe, #newsletter #successSubscribe {
+	border: none;
+	background: none;
+	padding: 0;
+	font-family: 'Sofia';
+	font-size: 18px;
+	color: #CE0D17;
+	font-weight: bold;
+}
+
+#newsletter #successSubscribe {
+	color: #0aae8c;
+}
