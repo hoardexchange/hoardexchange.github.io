@@ -2012,7 +2012,6 @@ footer .links .col-social {
 }
 footer .links .col-social img {
 	max-height: 20px;
-	max-width: 24px;
 	fill: #f00;
 }
 footer .links .col-social a {
@@ -2532,23 +2531,31 @@ form .error {
 #newsletter input {
 	width: 100%;
 	margin-top: 30px;
-	margin-bottom: 10px;
 	border: 1px solid #ccc;
+	height: 50px;
+	margin-bottom: 0px;
 }
 #newsletter button {
-	width: 100%;
+	padding: 13px 40px 14px 40px;
+	margin-top: 30px;
 	margin-bottom: 20px;
 }
 #newsletter #errorSubscribe, #newsletter #successSubscribe {
 	border: none;
 	background: none;
 	padding: 0;
+	margin-top: 15px;
+	margin-bottom: -15px;
 	font-family: 'Sofia';
 	font-size: 18px;
 	color: #CE0D17;
-	font-weight: bold;
+	font-weight: 600;
+	line-height: 1.3333;
+	border-radius: 0;
 }
 
 #newsletter #successSubscribe {
-	color: #0aae8c;
+	color: #fff;
+	background: #000;
+	padding: 20px;
 }
