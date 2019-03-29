@@ -2012,6 +2012,7 @@ footer .links .col-social {
 }
 footer .links .col-social img {
 	max-height: 20px;
+	max-width: 24px;
 	fill: #f00;
 }
 footer .links .col-social a {
