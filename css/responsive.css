@@ -52,7 +52,7 @@
 	.button-xxl	{
 		padding: 15px 0 0 0;
 		font-size: 16px;
-		height: 50px;
+		min-height: 50px;
 	}
 
 	.title-comment {
@@ -616,11 +616,29 @@
 		text-align: left;
 		padding-top: 60px;	
 	}
+	.documentation-cover .cover-label {
+		left: auto !important;
+		right: 15%;
+		text-align: right;
+	}
+	
 }
 
 @media (max-width: 480px) {
 	.banner .video {
 		display: none;
+	}
+	.documentation-cover .label-whitepaper,
+	.documentation-cover .label-onepager 
+	{
+		font-size: 20px;
+		top: 120px;
+	}
+	.documentation-cover .label-onepager {
+		top: 180px;
+	}
+	.documentation-cover .label-desc {
+		bottom: 10%;
 	}
 }
 
@@ -752,11 +770,3 @@
 		margin-bottom: 30px;
 	}
 }
-
-
-
-
-
-
-
-
