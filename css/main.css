@@ -115,8 +115,11 @@ p {
 
 
 
-.color {
+.color, em {
 	color: #CE0D17;
+}
+em {
+	font-style: normal;
 }
 .muted-1 {
 	color: #0B1020;
@@ -294,11 +297,12 @@ button {
 
 
 .button-xxl {
-	height: 79px;
+	min-height: 79px;
+	height: auto;
 	font-size: 26px;
 	font-weight: 600;
 	letter-spacing: -0.04em;
-	padding: 27px 130px 0 130px;
+	padding: 27px 130px 26px 130px;
 }
 .button-sm {
 	font-size: 15px;
@@ -847,9 +851,7 @@ ul.clean li {
 	margin-left: 2px;
 	vertical-align: 19%;
 }
-.lang-witch {
-	display: none !important;
-}
+
 
 .menu .button {
 	margin-top: -3px;
@@ -924,14 +926,14 @@ ul.clean li {
 }
 .banner .slogan {
 	line-height: 68px;
+	padding-bottom: 30px;
+	font-size: 51px;
+	letter-spacing: -0.01em;
+}
+.banner em {
 	font-size: 76px;
 	letter-spacing: -0.02em;
-	padding-bottom: 30px;
-}
-.banner .primary {
-	font-size: 51px;
 	display: block;
-	letter-spacing: -0.01em;
 }
 .tokens h5 {
 	color: #fff;
@@ -942,6 +944,7 @@ ul.clean li {
 	padding: 0;
 	margin: 0;
 	letter-spacing: -0.03em;
+	font-size: 57px;
 }
 .tokens .button {
 	width: 100%;
@@ -955,12 +958,27 @@ ul.clean li {
 }
 .tokens .approved {
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 48px;
+}
+.approved span {
+	font-size: 14px;
+	opacity: 0.6;
+	padding-left: 5px;
+	line-height: 28px;
 }
 .banner .video {
 	margin-top: 90px;
 	cursor: pointer;
+	position: relative;
 }
+.play {
+	position: absolute;
+	height: 64px;
+	left: 18px;
+	bottom: 12px;
+}
+
+
 .video:hover img {
 	filter: brightness(115%);
   -webkit-filter: brightness(115%);	
@@ -1000,6 +1018,7 @@ ul.clean li {
 	font-size: 63px;
 	color: #fff;
 	font-weight: 900;
+	display: block;
 }
 .subpage .banner .button {
 	margin-top: 30px;
@@ -1024,16 +1043,22 @@ ul.clean li {
 	position: absolute;
 	right: 0;
 	bottom: 0;
+	text-align: right;
 }
-.subpage .corner img {
-	width: 125px;
+.subpage .corner .approved {
 	max-width: none;
-	height: 60px;
 	position: absolute;
 	right: 80px;
 	bottom: -246px;
+	width: 160px;
 }
-
+.subpage .corner .approved span {
+	line-height: 16px;
+	font-weight: 600;
+	opacity: 0.8;
+	display: block;
+	margin-top: 8px;
+}
 
 
 
@@ -1225,6 +1250,9 @@ ul.clean li {
 	min-height: 0;
 	position: relative;
 }
+.qBlock .person .name {
+	text-transform: uppercase;
+}
 .qBlock .person .sign {
 	position: absolute;
 	right: -60px;
@@ -1264,6 +1292,7 @@ ul.clean li {
 	border-color: transparent transparent transparent #fff;
 	position: absolute;
 	bottom: 0;
+	left: 0;
 }
 
 
@@ -1347,10 +1376,26 @@ ul.clean li {
 }
 .section-video .play {
 	position: absolute;
-	width: 131px;
 	height: 64px;
 	right: 80px;
+	left: auto;
 	bottom: 40px;
+}
+.play span {
+	text-transform: uppercase;
+	letter-spacing: 0.18em;
+	color: #fff;
+	font-weight: 900;
+	font-size: 11px;
+	margin-right: -30px;
+	vertical-align: 50%;
+}
+.play:hover {
+	text-decoration: none !important;
+}
+.play:hover span {
+	color: #CE0D17;
+	transition: color 0.2s;
 }
 .section-video .title {
 	position: absolute;
@@ -1458,12 +1503,14 @@ ul.clean li {
 .box3d .hide-solution
 {
 	position: absolute;
-	width: 180px;
-	top: 145px;
+	top: 262px;
+	right: -156px;
+	width: 200px;
+	text-align: right;
 	font-weight: 600;
-	right: 124px;
 	font-size: 13px;
-	transform: translateX(100%) translateY(-100%) rotate(-90deg);
+	transform: rotate(-90deg);
+	transform-origin: top left;
 	color: #CE0D17;
 }
 .box3d .hide-solution {
@@ -1471,7 +1518,6 @@ ul.clean li {
 	color: #fff;
 }
 .box3d.active .hide-solution {
-	top: 105px;
 	display: block;
 }
 .box3d.active .show-solution {
@@ -1742,7 +1788,33 @@ ul.clean li {
 	margin-bottom: 10px;
 	min-width: 315px;
 }
-
+.documentation-cover {
+	position: relative;
+}
+.documentation-cover .cover-label {
+	position: absolute;
+	color: #fff;
+	font-size: 34px;
+	font-weight: 600;
+	z-index: 100;
+}
+.documentation-cover .label-whitepaper {
+	top: 216px;
+	right: 200px;
+}
+.documentation-cover .label-onepager {
+	top: 323px;
+	right: 100px;
+}
+.documentation-cover .label-desc {
+	font-size: 8px;
+	text-align: center;
+	width: 200px;
+	margin-left: -30px;
+	left: 50%;
+	line-height: 12px;
+	bottom: 95px;
+}
 
 
 
@@ -1826,6 +1898,8 @@ ul.clean li {
 .person .details .desc .button {
 	font-size: 15px;
 	background: none;
+	min-height: 50px;
+	height: auto;
 }
 .bio-content {
 	max-width: 920px;
@@ -1906,6 +1980,12 @@ ul.clean li {
 	max-width: 360px;
 	padding-top: 38px;
 	padding-bottom: 30px;
+}
+#tokens .sale .button-xxl {
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100%;
+	text-align: center;
 }
 #tokens .sale .col-api {
 	text-align: right;
@@ -2016,7 +2096,10 @@ footer .links .col-social img {
 	fill: #f00;
 }
 footer .links .col-social a {
-	margin-left: 25px;
+	margin-left: 15px;
+}
+footer .links .col-social a:first-child {
+	margin-left: 0px;
 }
 footer .links .textlink {
 	font-weight: normal !important;
@@ -2195,14 +2278,6 @@ footer .textlink img {
 
 
 
-
-/* GAMES */
-.players #games {
-	padding-top: 0;
-}
-.players #games .game-list {
-	background: none;
-}
 
 
 
@@ -2384,16 +2459,20 @@ footer .textlink img {
 .infographics .sidelab {
 	font-size: 15px;
 	transform: rotate(90deg);
+	transform-origin: top left;
 	position: absolute;
 	font-weight: 600;
+	width: 200px;
+	text-align: right;
 }
 .infographics .sidelabel-1 {
-	bottom: 70px;
-	left: -25px;
+	bottom: 210px;
+	left: 30px;
 }
 .infographics .sidelabel-2 {
-	top: 70px;
-	right: -25px;
+	top: 230px;
+	right: -170px;
+	transform: rotate(-90deg);
 }
 .infographics .row {
 /*	background: linear-gradient(180deg, 
@@ -2485,10 +2564,13 @@ footer .textlink img {
 	padding: 15px 0;
 	line-height: 30px;
 }
-.plain-text p {
-	padding-bottom: 40px;
+.plain-text h2 {
+	padding-top: 40px;
 }
-
+.plain-text h4 {
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
 
 
 form .error {
@@ -2559,4 +2641,257 @@ form .error {
 	color: #fff;
 	background: #000;
 	padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* Bar Chart */
+.barChart {
+	position: relative;
+}
+.chartTitle {
+	position: absolute;
+	display: block;
+	right: 0;
+	top: 15px;
+	text-align: right;
+	width: 200px;
+	line-height: 32px;
+	word-spacing: 200px; 	
+}
+.barChart .column {
+	float: left;
+	width: 76px;
+	position: relative;	
+	height: 356px;
+	text-align: center;
+}
+.barChart  .bar {
+	width: 60px;
+	margin-left: -30px;
+	border-radius: 2px;
+	left: 50%;
+	background: #ce1d2e;
+	border-right: solid 10px #ed1d2f;
+	bottom: 0;
+	position: absolute;
+}
+.barChart .title {
+	font-weight: 600;
+	letter-spacing: -0.014em;
+	font-size: 13px;
+	line-height: 16px;
+}
+.barChart .title-top {
+	word-spacing: 72px; 	
+	margin-top: -49px;
+	margin-left: 5px;
+	color: #CE0D17;
+}
+.barChart .title-bottom {
+	position: absolute;
+	bottom: -120px;
+	height: 100px;
+}
+
+.barChart-appendix {
+	text-align: right;
+	margin-top: 150px;
+	font-size: 9px;
+	clear: both
+}
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* LANGUAGE SPECIFIC */
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* JP */
+.lang-jp body {
+	font-family: 'Sofia', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Osaka', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+.lang-jp .navbar, 
+.lang-jp .navbar .button-sm
+{
+	font-size: 13px;
+}
+.lang-jp .font-l {
+	font-size: 14px;
+	line-height: 32px;
+}
+.lang-jp .font-xl {
+	font-size: 16px;
+	line-height: 34px;
+}
+.lang-jp .font-xxl {
+	font-size: 30px;
+	letter-spacing: -0.022em;
+}
+.lang-jp .banner .slogan {
+	font-size: 40px;
+}
+.lang-jp .banner .slogan em {
+	font-size: 70px;
+}
+.lang-jp .section-video .title h2 {
+	font-size: 28px;
+}
+.lang-jp .roadmap .name {
+	font-size: 18px;
+}
+.lang-jp .documentation-cover .cover-label:not(.label-desc) {
+	font-size: 28px;
+}
+
+
+
+
+
+/* CH */
+.lang-ch body {
+	font-family: 'Sofia', '华文细黑', 'STXihei', 'PingFang TC', '微软雅黑体', 'Microsoft YaHei New', '微软雅黑', 'Microsoft Yahei', '宋体', 'SimSun', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+.lang-ch #valueProposition h4.font-xl {
+	font-size: 16px;
+	line-height: 34px;
+}
+.lang-ch #products h2 {
+	word-break: keep-all;
+}
+.lang-ch #earlyAccess h2 {
+	word-break: keep-all;
+}
+
+
+
+/* KO */
+.lang-ko body {
+	font-family: 'Sofia', 'Apple SD Gothic Neo', 'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', '굴림', 'Gulim', '돋움', 'Dotum', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+.lang-ko {
+	word-break: keep-all;
+}
+.lang-ko .banner .slogan {
+	font-size: 40px;
+}
+.lang-ko .nav-tabs > li {
+	margin: 0 13px;
+}
+
+
+
+/* RU */
+.lang-ru body {
+	font-family: 'Sofia', 'Charcoal', 'Geneva', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+.lang-ru h4 {
+	font-size: 22px;
+}
+.lang-ru .font-l {
+	font-size: 14px;
+	line-height: 32px;
+}
+.lang-ru .font-xl {
+	font-size: 16px;
+	line-height: 34px;
+}
+.lang-ru .font-xxl {
+	font-size: 30px;
+	letter-spacing: -0.022em;
+}
+.lang-ru .menu li a {
+	padding-left: 10px;
+}
+.lang-ru .soon-msg h2 span {
+	display: block;
+}
+.lang-ru .barChart .title-bottom {
+	writing-mode: tb-rl;
+	display: block;	
+	height: 80px;
+	text-align: left;
+	margin-left: 20px;
+}
+
+
+
+
+/* AR */
+.lang-ar body {
+	font-family: 'Sofia', 'Geeza Pro', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+	direction: rtl;
+	text-align: right;
+}
+.lang-ar [class^="col-"]  {
+  float: right !important;
+}
+
+.lang-ar .menu li a {
+	padding: 10px 12px;
+}
+.lang-ar .subpage .banner .col-lg-6 {
+	float: left !important;
+}
+.lang-ar .play {
+	direction: ltr;
+}
+.lang-ar .partners img {
+	padding-right: 0;
+	padding-left: 40px;
+}
+
+.lang-ar .h5-muted-square {
+	padding-right: 18px;
+	padding-left: 0;	
+	border-left: 0;
+	border-right: 4px solid #CE0D17;
+}
+.lang-ar .owl-carousel,
+.lang-ar .submenuContainer
+{
+	direction: ltr !important;
+	text-align: left;
+}
+.lang-ar ul.bullet {
+	margin-left: 0;
+	margin-right: -40px;
+}
+.lang-ar ul.bullet li:before {
+	content: '';
+	display: inline-block;
+	height: 1em;
+	width: 10px;
+	margin-left: 10px;
+	background: url(../images/list-bullet-2.svg) left 5px no-repeat;
+}
+.lang-ar .person .linkedin {
+	right: auto;
+	left: 0;
+}
+.lang-ar #tokens .sale .approved {
+	text-align: right;
+}
+.lang-ar #games .game-list {
+	background: #f7f7f8;
+}
+.lang-ar .close-modal {
+	direction: ltr;
+}
+.lang-ar #valueProposition .col-button {
+	text-align: left;
 }

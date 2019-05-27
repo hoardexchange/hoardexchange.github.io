@@ -81,23 +81,36 @@
 				<!-- Menu -->
 				<div class="collapse navbar-collapse" id="menu-collapse">
 					<ul class="menu nav navbar-nav">
-						<li><a href="index.html">Home</a></li>												
-						<li><a href="players.html">Game Players</a></li>
-						<li class="active"><a href="devs.html">Game Makers</a></li>
-						<li><a href="invest.html">Private Investors</a></li>
+						<li><a href="index.html" lang="en">Home</a></li>
+						<li><a href="players.html" lang="en">Game Players</a></li>
+						<li class="active"><a href="devs.html" lang="en">Game Makers</a></li>
+						<li><a href="invest.html" lang="en">Private Investors</a></li>
 					</ul>
 					<ul class="menu menu-actions nav navbar-nav">
-						<li class="lang-witch"><a>ENG <i class="glyphicon glyphicon-triangle-bottom"></i></a></li>
+
+						<li>
+								<a data-toggle="dropdown"><span class="currentLangName">EN</span> <i class="glyphicon glyphicon-triangle-bottom"></i></a>
+								<ul class="dropdown-menu">
+									<li class="lang" data-lang="en"><a>EN</a></li>
+									<li class="lang" data-lang="ch"><a>CH</a></li>
+									<li class="lang" data-lang="ru"><a>RU</a></li>
+									<li class="lang" data-lang="jp"><a>JP</a></li>
+									<li class="lang" data-lang="ko"><a>KO</a></li>
+									<li class="lang" data-lang="ar"><a>AR</a></li>
+								</ul>
+						</li>
+
 						<li>
 							<div class="dropdown">
-								<a class="button button-sm button-border button-border-light" data-toggle="dropdown">Documents <i class="glyphicon glyphicon-triangle-bottom"></i></a>
+								<a class="button button-sm button-border button-border-light" data-toggle="dropdown" lang="en">Documents <i class="glyphicon glyphicon-triangle-bottom"></i></a>
 								<ul class="dropdown-menu">
-									<li><a href="files/hoard-whitepaper.pdf">Whitepaper</a></li>
-									<li><a href="files/hoard-onepager.pdf">Onepager</a></li>
+									<li><a href="files/hoard-whitepaper.pdf" lang="en">Whitepaper</a></li>
+									<li><a href="files/hoard-onepager.pdf" lang="en">Onepager</a></li>
 								</ul>
 							</div>
 						</li>
-						<li><a class="button button-sm" href="mailto:hello@hoard.exchange?subject=Hoard SDK&body=Hello,%0D%0A%0D%0AI am interested in receiving the Hoard SDK.%0D%0APlease contact me at this email address.%0D%0A%0D%0AThanks.">Get SDK Access</a></li>
+						<li><a href="https://p2pb2b.io/referral/059c444a-4dd1-4063-a54d-3a35e7efd116" target="_blank" class="button button-sm" lang="en">Buy Hoard Tokens</a></li>												
+<!--						<li><a class="button button-sm" href="mailto:hello@hoard.exchange?subject=Hoard SDK&body=Hello,%0D%0A%0D%0AI am interested in receiving the Hoard SDK.%0D%0APlease contact me at this email address.%0D%0A%0D%0AThanks." lang="en">Get SDK Access</a></li> -->
 						
 					</ul>
 				</div>
@@ -114,11 +127,11 @@
 				
 					<div class="col-lg-6">
 						<h1 class="slogan">
-							<span class="primary">Unlocking new opportunities for</span> 
-							<span class="secondary color">Game developers</span>
+							<div class="primary" lang="en" data-lang-token="#SloganDevs-Main-p01">Unlocking new opportunities for</div> 
+							<span class="secondary color" lang="en" data-lang-token="#SloganDevs-Main-p02">Game developers</span>
 						</h1>							
-						<a class="button button-light" href="mailto:hello@hoard.exchange?subject=Hoard SDK&body=Hello,%0D%0A%0D%0AI am interested in receiving the Hoard SDK.%0D%0APlease contact me at this email address.%0D%0A%0D%0AThanks.">Get Software Dev Kit Access</a>
-						<a class="button button-border button-border-light" href="mailto:hello@hoard.exchange?subject=Call with the Hoard Team&body=Hello,%0D%0A%0D%0AI am interested in booking a call with the Hoard team.%0D%0APlease contact me at this email address.%0D%0A%0D%0AThanks.">Book a Call with the Hoard Team</a>
+						<a class="button button-light" href="mailto:hello@hoard.exchange?subject=Hoard SDK&body=Hello,%0D%0A%0D%0AI am interested in receiving the Hoard SDK.%0D%0APlease contact me at this email address.%0D%0A%0D%0AThanks." lang="en">Get Software Dev Kit Access</a>
+						<a class="button button-border button-border-light" href="mailto:hello@hoard.exchange?subject=Call with the Hoard Team&body=Hello,%0D%0A%0D%0AI am interested in booking a call with the Hoard team.%0D%0APlease contact me at this email address.%0D%0A%0D%0AThanks." lang="en">Book a Call with the Hoard Team</a>
 					</div>
 					
 				</div>
@@ -129,7 +142,10 @@
 		
 		<!-- corner -->
 		<div class="corner">		
-			<img src="images/approved_by_danish.png" alt="">
+			<div class="approved">
+				<img src="images/security-dark.svg" alt=""> 
+				<span class="muted-2" lang="en">Approved by Danish Government</span>
+			</div>
 		</div>			
 		
 		
@@ -144,7 +160,7 @@
 	
 	<div class="partners">
 		<div class="container">
-			<h5 class="h5-muted">Partners</h5>
+			<h5 class="h5-muted" lang="en">Partners</h5>
 			<div class="partners-list">
 				<img src="images/partner-01.png" alt="" style="width:162px; margin-top: 23px;">
 				<img src="images/partner-02.png" alt="" style="width:118px; margin-top: 23px;">
@@ -165,39 +181,42 @@
 		<div class="container">
 
 			<!--Title-->
-			<h5 class="h5-muted-square">THE NEXT BIG THING</h5>
-			<h2>Blockchain revolution in <span class="color">game development </span></h2>
+			<h5 class="h5-muted-square" lang="en">The next big thing</h5>
+			<h2>
+				<span lang="en" data-lang-token="#NextBig-Head-p01">Blockchain revolution in</span>
+				<span class="color" lang="en" data-lang-token="#NextBig-Head-p02">game development </span>
+			</h2>
 
 
 			<div class="row">
 			
 				<div class="col-lg-3 col-nav">
 					<ul class="nav nav-side font-xl">
-							<li class="active"><a href="#tab-players-1" data-toggle="tab">Raise funds and develop an "economic community"</a></li>
-							<li><a href="#tab-players-2" data-toggle="tab">New or improved ways to monetize your game</a></li>
-							<li><a href="#tab-players-3" data-toggle="tab">New forms of product design and accompanying marketing models</a></li>
+							<li class="active"><a href="#tab-players-1" data-toggle="tab" lang="en">Raise funds and develop an “economic community”</a></li>
+							<li><a href="#tab-players-2" data-toggle="tab" lang="en">New or improved ways to monetize your game</a></li>
+							<li><a href="#tab-players-3" data-toggle="tab" lang="en">New forms of product design and accompanying marketing models</a></li>
 					</ul>			
 				</div>
 				
 				<div class="tab-content col-lg-4 col-lg-offset-1">
 					<div id="tab-players-1" class="tab-pane active">
 						<ul class="bullet muted-2">
-							<li>Bypass traditional funding models and raise funds to develop your game from hundreds or even thousands of individuals by offering them real value, for example rare in-game items.</li>					
-							<li>Take advantage of all off-the-shelf developers’ tools offered by the Hoard platform.</li>					
-							<li>If HRD tokens are not sufficiently flexible for your desired business model, come up with your own innovative token designs. Tweak existing ownership models, offer token holders access to unique items and features, or even get them engaged in decisions regarding future development of your game.</li>					
-							<li>The token distribution represents a new kind of incentivized community which you can activate and engage in all kinds of new ways.</li>					
+							<li lang="en">Bypass traditional funding models and raise funds to develop your game from hundreds or even thousands of individuals by offering them real value, for example rare in-game items.</li>					
+							<li lang="en">Take advantage of all off-the-shelf developers’ tools offered by the Hoard platform.</li>					
+							<li lang="en">If HRD tokens are not sufficiently flexible for your desired business model, come up with your own innovative token designs. Tweak existing ownership models, offer token holders access to unique items and features, or even get them engaged in decisions regarding future development of your game.</li>					
+							<li lang="en">The token distribution represents a new kind of incentivized community which you can activate and engage in all kinds of new ways.</li>					
 						</ul>
 					</div>
 					<div id="tab-players-2" class="tab-pane">
 						<ul class="bullet muted-2">
-							<li>Make a profit not only from primary but also secondary market transactions, as well as every rental of your game’s assets.</li>
-							<li>Introduce new content to existing games to extend their economic viability.</li>
+							<li lang="en">Make a profit not only from primary but also secondary market transactions, as well as every rental of your game’s assets.</li>
+							<li lang="en">Introduce new content to existing games to extend their economic viability.</li>
 						</ul>
 					</div>
 					<div id="tab-players-3" class="tab-pane">
 						<ul class="bullet muted-2">
-							<li>Enjoy network effects by launching multiple games and platforms with interdependent features and take advantage of synergies with other titles on the Hoard platform.</li>
-							<li>Access Hoard’s platform-wide marketing and advertising tools, or come up with your own methods, backed right into your token design. Engage in supportive activities (e.g. web minigames) which enable gamers to acquire items, create charity campaigns (“mining gold for goods”), etc.</li>
+							<li lang="en">Enjoy network effects by launching multiple games and platforms with interdependent features and take advantage of synergies with other titles on the Hoard platform.</li>
+							<li lang="en">Access Hoard’s platform-wide marketing and advertising tools, or come up with your own methods, backed right into your token design. Engage in supportive activities (e.g. web minigames) which enable gamers to acquire items, create charity campaigns (“mining gold for goods”), etc.</li>
 						</ul>
 					</div>
 				</div>
@@ -220,12 +239,15 @@
 		<div class="container">
 
 			<!--Title-->
-			<h5 class="h5-muted-square">From developers to developers</h5>
-			<h2>We have been involved in the Gaming Industry for years. Now is the time for our next big move. <span class="color">Join us now.</span></h2>
+			<h5 class="h5-muted-square" lang="en">From developers to developers</h5>
+			<h2>
+				<span lang="en" data-lang-token="#DevsToDevs-Head-p01">We have been involved in the Gaming Industry for years. Now is the time for our next big move.</span>
+				<span class="color" lang="en" data-lang-token="#DevsToDevs-Head-p02">Join us now.</span>
+			</h2>
 			
 			<div class="row">
 				<div class="col-lg-5">
-					<p class="muted-2 font-l">
+					<p class="muted-2 font-l" lang="en" data-lang-token="#DevsToDevs-Quote-A">
 						Driving growth and value for Game Developers is critical to our goals...and our success. Everything we do at Hoard is geared toward partnering with and enabling Game Developers and their communities to thrive and grow; their success is Hoard's success.
 					</p>
 					<div class="author">
@@ -233,22 +255,22 @@
 							<img src="images/team-01.png" alt="">
 						</div>
 						<div class="name">
-							<div class="strong">Sławomir Bubel</div>
-							<div class="muted-2 font-m">CEO @HOARD</div>
+							<div class="strong" lang="en">Sławomir Bubel</div>
+							<div class="muted-2 font-m" lang="en">CEO @HOARD</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-5 col-lg-offset-1">
-					<p class="muted-2 font-l">
-						Our #1 focus is pioneering a platform for Game Developers to grow their games and communities to deliver a truly "game changing" experience for gamers.<br><br>						
+					<p class="muted-2 font-l" lang="en" data-lang-token="#DevsToDevs-Quote-B">
+						Our #1 focus is pioneering a platform for Game Developers to grow their games and communities to deliver a truly "game changing" experience for gamers.
 					</p>
 					<div class="author">
 						<div class="avatar">
 							<img src="images/team-04.png" alt="">
 						</div>
 						<div class="name">
-							<div class="strong">Cyryl Matuszewski</div>
-							<div class="muted-2 font-m">Lead Programmer @HOARD</div>
+							<div class="strong" lang="en">Cyryl Matuszewski</div>
+							<div class="muted-2 font-m" lang="en">Lead Programmer @HOARD</div>
 						</div>
 					</div>
 				</div>
@@ -269,7 +291,10 @@
 			<div class="section-problems">
 			
 				<div class="title">
-					<h2>Gaming Industry <span class="color">Problems</span></h2>
+					<h2>
+						<span lang="en" data-lang-token="#Problems-Head-p01">Gaming Industry</span>
+						<span class="color" lang="en" data-lang-token="#Problems-Head-p02">Problems</span>
+					</h2>
 				</div>
 
 				<div class="row animatedParent">
@@ -278,64 +303,64 @@
 
 						<div class="box3d box3d-color">
 							<div class="content">
-								<h4 class="font-xl">Lack of True Ownership</h4>
-								<p class="font-l">
+								<h4 class="font-xl" lang="en">Lack of True Ownership</h4>
+								<p class="font-l" lang="en">
 									Players do not really own their DLC and other in-game assets. These assets are actually stored on a custodial, centralized game server which prohibits any transfer or trade of ownership.
 								</p>
 							</div>
 							<div class="content content-details animated fadeIn">
-								<h4 class="font-xl">Solution - Tokenize all Content</h4>
-								<p class="font-l">
+								<h4 class="font-xl" lang="en">Solution - Tokenize all Content</h4>
+								<p class="font-l" lang="en">
 									Allow players to freely transfer, trade, rent, and stake their in-game assets. Enable this activity on-chain to ensure true ownership.
 								</p>
 							</div>																			
 							<div class="action animated growIn">
 								<img src="images/box3d-arrow.svg" alt="" class="arrow arrow-1	">
 								<img src="images/box3d-arrow-2.svg" alt="" class="arrow arrow-2	">
-								<div class="show-solution">Click to see Hoard Solution</div>
-								<div class="hide-solution">Hide Hoard Solution</div>
+								<div class="show-solution" lang="en">Click to see Hoard Solution</div>
+								<div class="hide-solution" lang="en">Hide Hoard Solution</div>
 							</div>
 						</div>
 
 						<div class="box3d box3d-color">
 							<div class="content">
-								<h4 class="font-xl">Players are Not Compensated</h4>
-								<p class="font-l">
+								<h4 class="font-xl" lang="en">Players are Not Compensated</h4>
+								<p class="font-l" lang="en">
 									Players generate original content through creator modes and tools, novel behaviors, and simply by interacting with other players.
 								</p>
 							</div>						
 							<div class="content content-details animated fadeIn">
-								<h4 class="font-xl">Solution - Allow Players to Tokenize Content</h4>
-								<p class="font-l">
+								<h4 class="font-xl" lang="en">Solution - Allow Players to Tokenize Content</h4>
+								<p class="font-l" lang="en">
 									When players generate content, allow them to tokenize their work. They can then monetize it and share profit with the publisher.
 								</p>
 							</div>																			
 							<div class="action animated growIn delay-500">
 								<img src="images/box3d-arrow.svg" alt="" class="arrow arrow-1	">
 								<img src="images/box3d-arrow-2.svg" alt="" class="arrow arrow-2	">
-								<div class="show-solution">Click to see Hoard Solution</div>
-								<div class="hide-solution">Hide Hoard Solution</div>
+								<div class="show-solution" lang="en">Click to see Hoard Solution</div>
+								<div class="hide-solution" lang="en">Hide Hoard Solution</div>
 							</div>
 						</div>
 
 						<div class="box3d box3d-color">
 							<div class="content">
-								<h4 class="font-xl">Fraudulent Trades</h4>
-								<p class="font-l">
+								<h4 class="font-xl" lang="en">Fraudulent Trades</h4>
+								<p class="font-l" lang="en">
 									For every one honest trade that occurs on a secondary market, seven fraudulent transactions take place.
 								</p>
 							</div>																			
 							<div class="content content-details animated fadeIn">
-								<h4 class="font-xl">Solution - Enable Atomic Swaps</h4>
-								<p class="font-l">
+								<h4 class="font-xl" lang="en">Solution - Enable Atomic Swaps</h4>
+								<p class="font-l" lang="en">
 									Use smart contracts to ensure trades between players are always fully secure. This will eliminate fraud altogether.
 								</p>
 							</div>																			
 							<div class="action animated growIn delay-1000">
 								<img src="images/box3d-arrow.svg" alt="" class="arrow arrow-1	">
 								<img src="images/box3d-arrow-2.svg" alt="" class="arrow arrow-2	">
-								<div class="show-solution">Click to see Hoard Solution</div>
-								<div class="hide-solution">Hide Hoard Solution</div>
+								<div class="show-solution" lang="en">Click to see Hoard Solution</div>
+								<div class="hide-solution" lang="en">Hide Hoard Solution</div>
 							</div>
 						</div>
 					
@@ -345,43 +370,43 @@
 
 						<div class="box3d box3d-color">
 							<div class="content">
-								<h4 class="font-xl">Publishers Cannot Monetize Trades</h4>
-								<p class="font-l">
+								<h4 class="font-xl" lang="en">Publishers Cannot Monetize Trades</h4>
+								<p class="font-l" lang="en">
 									When players make trades on secondary markets, publishers are unable to generate revenue from their IP. 
 								</p>
 							</div>						
 							<div class="content content-details animated fadeIn">
-								<h4 class="font-xl">Solution - Install Publisher Fees in Content</h4>
-								<p class="font-l">
+								<h4 class="font-xl" lang="en">Solution - Install Publisher Fees in Content</h4>
+								<p class="font-l" lang="en">
 									When users engage in real economic activity, which they will be incentivized to do with true ownership, fees can remit to publishers.
 								</p>
 							</div>																			
 							<div class="action animated growIn delay-250">
 								<img src="images/box3d-arrow.svg" alt="" class="arrow arrow-1	">
 								<img src="images/box3d-arrow-2.svg" alt="" class="arrow arrow-2	">
-								<div class="show-solution">Click to see Hoard Solution</div>
-								<div class="hide-solution">Hide Hoard Solution</div>
+								<div class="show-solution" lang="en">Click to see Hoard Solution</div>
+								<div class="hide-solution" lang="en">Hide Hoard Solution</div>
 							</div>
 						</div>
 
 						<div class="box3d box3d-color">
 							<div class="content">
-								<h4 class="font-xl">Securing Game Development Financing is Challenging</h4>
-								<p class="font-l">
+								<h4 class="font-xl" lang="en">Securing Game Development Financing is Challenging</h4>
+								<p class="font-l" lang="en">
 									Unless a video game is funded as a AAA title, it is incredibly difficult for game studios to find investors.
 								</p>
 							</div>						
 							<div class="content content-details animated fadeIn">
-								<h4 class="font-xl">Solution - Crowdfund in Exchange for Content</h4>
-								<p class="font-l">
+								<h4 class="font-xl" lang="en">Solution - Crowdfund in Exchange for Content</h4>
+								<p class="font-l" lang="en">
 									Sell content direct to players, which they will use to drive in-game economic activity, as a method of raising investment funds.
 								</p>
 							</div>																			
 							<div class="action animated growIn delay-750">
 								<img src="images/box3d-arrow.svg" alt="" class="arrow arrow-1	">
 								<img src="images/box3d-arrow-2.svg" alt="" class="arrow arrow-2	">
-								<div class="show-solution">Click to see Hoard Solution</div>
-								<div class="hide-solution">Hide Hoard Solution</div>
+								<div class="show-solution" lang="en">Click to see Hoard Solution</div>
+								<div class="hide-solution" lang="en">Hide Hoard Solution</div>
 							</div>
 						</div>
 						
@@ -412,10 +437,10 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<h2>
-						<div>Advanced Ecosystem of Products to Disrupt</div>
-						<div class="color">Gaming Industry</div>
+						<div lang="en" data-lang-token="#Disrupt-Head-p01">Advanced Ecosystem of Products to Disrupt</div>
+						<div class="color" lang="en" data-lang-token="#Disrupt-Head-p02">Gaming Industry</div>
 					</h2>
-					<p class="font-xl">
+					<p class="font-xl" lang="en" data-lang-token="#Disrupt-Comment">
 						Hoard provides Game Developers a dedicated advanced product ecosystem to enable new opportunities for them. Explore the Hoard platform that includes SDK, the Marketplace and the Crowdfunding Portal.
 					</p>
 				</div>
@@ -432,37 +457,40 @@
 	<!-- HOARD EXCHANGE (Product System Tabs) -->
 	<div class="container">
 		<div class="section-productSystem">
-			<h2>Hoard Products <span class="color">System</span></h2>
-			
-				<div class="pic">
-					<div class="owl-carousel owl02 owl-theme owl-center">
-						<img src="images/prod-1.jpg" alt="">
-						<img src="images/prod-2.jpg" alt="">
-						<img src="images/prod-3.png" alt="">
-					</div>
+			<h2>
+				<span lang="en" data-lang-token="#ProductSystem-Head-p01">Hoard Products</span>
+				<span class="color" lang="en" data-lang-token="#ProductSystem-Head-p02">System</span>
+			</h2>
+		
+			<div class="pic">
+				<div class="owl-carousel owl02 owl-theme owl-center">
+					<img src="images/prod-1.jpg" alt="">
+					<img src="images/prod-2.jpg" alt="">
+					<img src="images/prod-3.png" alt="">
 				</div>
+			</div>
 			
 			<ul class="siteTabs siteTabs-line nav nav-tabs font-xl">
-				<li class="active"><a href="#tab-1" data-toggle="tab">Software Development Kit (SDK)</a></li>
-				<li><a href="#tab-2" data-toggle="tab">Crowdfunding Platform</a></li>
-				<li><a href="#tab-3" data-toggle="tab">Mentoring and Consulting</a></li>
+				<li class="active"><a href="#tab-1" data-toggle="tab" lang="en">Software Development Kit (SDK)</a></li>
+				<li><a href="#tab-2" data-toggle="tab" lang="en">Crowdfunding Platform</a></li>
+				<li><a href="#tab-3" data-toggle="tab" lang="en">Mentoring and Consulting</a></li>
 			</ul>				
 
 			<div class="tab-content">
 
 				<div class="tab-pane fade active in" id="tab-1">
-					<h4>Software Development Kit (SDK)</h4>
-					<p class="muted-2 font-l">Hoard SDK is an easy-to-use open source tool used to integrate any game with blockchain. Simple and well documented, Hoard’s SDK means developers don’t need to be blockchain experts to use it for their games. Game Developers can easily “tokenize” game assets for security and ongoing revenue from all transactions on the Marketplace.</p>
+					<h4 lang="en">Software Development Kit (SDK)</h4>
+					<p class="muted-2 font-l" lang="en" data-lang-token="#SDK-Tab">Hoard SDK is an easy-to-use open source tool used to integrate any game with blockchain. Simple and well documented, Hoard’s SDK means developers don’t need to be blockchain experts to use it for their games. Game Developers can easily “tokenize” game assets for security and ongoing revenue from all transactions on the Marketplace.</p>
 				</div>				
 
 				<div class="tab-pane fade" id="tab-2">
-					<h4>Crowdfunding Platform</h4>
-					<p class="muted-2 font-l">A place to raise funds for game development where creators can bypass traditional funding models and take advantage of Hoard’s game-centric community to support their project and raise funds by selling in-game assets, rewards, and early game access.</p>
+					<h4 lang="en">Crowdfunding Platform</h4>
+					<p class="muted-2 font-l" lang="en" data-lang-token="#Crowdfunding-Tab">A place to raise funds for game development where creators can bypass traditional funding models and take advantage of Hoard’s game-centric community to support their project and raise funds by selling in-game assets, rewards, and early game access.</p>
 				</div>				
 
 				<div class="tab-pane fade" id="tab-3">
-					<h4>Mentoring and Consulting</h4>
-					<p class="muted-2 font-l">Access Hoard’s platform-wide marketing and advertising tools or come up with your own methods of doing business, baked right into your token design. Utilize our team’s blockchain and gaming expertise to build an engaged community around your games.  </p>
+					<h4 lang="en">Mentoring and Consulting</h4>
+					<p class="muted-2 font-l" lang="en" data-lang-token="#Mentoring-Tab">Access Hoard’s platform-wide marketing and advertising tools or come up with your own methods of doing business, baked right into your token design. Utilize our team’s blockchain and gaming expertise to build an engaged community around your games.  </p>
 				</div>				
 
 			</div>
@@ -476,13 +504,16 @@
 		<div class="container">
 		
 			<!--Title-->
-			<h5 class="h5-muted-square">ECONOMIC SYSTEM </h5>
+			<h5 class="h5-muted-square" lang="en">Economic System</h5>
 			<div class="row row-delivers">
 				<div class="col-lg-6">
-					<h2>Hoard your tokens<div class="color">Hoard your valuables</div></h2>
+					<h2>
+						<span lang="en" data-lang-token="#EconomicSystem-Head-p01">Hoard your tokens</span>
+						<div class="color" lang="en" data-lang-token="#EconomicSystem-Head-p02">Hoard your valuables</div>
+					</h2>
 				</div>
 				<div class="col-2 col-lg-3 col-lg-offset-2">
-					<p class="muted-2 font-l title-comment">
+					<p class="muted-2 font-l title-comment" lang="en" data-lang-token="#EconomicSystem-Comment">
 						The Hoard token can be considered the lifeblood of the economic system functioning on top of the Hoard platform. 
 					</p>
 				</div>
@@ -494,9 +525,9 @@
 				<div class="col-sm-4">
 					<div class="box">
 						<div class="header"><img src="images/hoard_your-1.svg" alt="" class="img-1"></div>
-						<h4>Game items</h4>
+						<h4 lang="en">Game items</h4>
 						<div class="content">
-							<p class="muted-2 font-l">
+							<p class="muted-2 font-l" lang="en">
 								From weapons to quests, levels and more, everything can be tokenized and represented on the blockchain.
 							</p>
 						</div>
@@ -506,9 +537,9 @@
 				<div class="col-sm-4">
 					<div class="box">
 						<div class="header"><img src="images/hoard_your-2.svg" alt="" class="img-2"></div>
-						<h4>Licenses</h4>
+						<h4 lang="en">Licenses</h4>
 						<div class="content">
-							<p class="muted-2 font-l">
+							<p class="muted-2 font-l" lang="en">
 								Sell your extra licenses, buy them as gifts, or trade them.
 							</p>
 						</div>						
@@ -518,9 +549,9 @@
 				<div class="col-sm-4">
 					<div class="box">
 						<div class="header"><img src="images/hoard_your-3.svg" alt="" class="img-3"></div>
-						<h4>Currency</h4>
+						<h4 lang="en">Currency</h4>
 						<div class="content">
-							<p class="muted-2 font-l">
+							<p class="muted-2 font-l" lang="en">
 								Game money is now a cryptocurrency that gives you real value.
 							</p>
 						</div>						
@@ -540,107 +571,109 @@
 	
 		<div class="container">
 			<div class="text-center">
-				<h2>The <span class="color">Roadmap</span> and Milestones</h2>		
+				<h2>
+					<span class="color" lang="en" data-lang-token="#Roadmap-Head-p01">The Roadmap</span> 
+					<span lang="en" data-lang-token="#Roadmap-Head-p02">and Milestones</span>
+				</h2>		
 				
 					<div class="row roadmap">
 						<div class="col-sm-2 col-node">
 							<div class="milestone">
-								<div class="name">Discovery</div>
-								<div class="year muted-2">2018</div>
+								<div class="name" lang="en">Discovery</div>
+								<div class="year muted-2" lang="en">2018</div>
 								<div class="pointer"><img src="images/roadmap-pointer.svg" alt=""></div>
 								<div class="node"><img src="images/roadmap-node.svg" alt=""></div>
 								<div class="details">
-									<div class="title font-xl">Milestones</div>
+									<div class="title font-xl" lang="en">Milestones</div>
 									<ul class="clean">
-										<li>Q1 Development starts</li>
-										<li>Q4 SDK Alpha version</li>
+										<li lang="en">Q1 Development starts</li>
+										<li lang="en">Q4 SDK Alpha version</li>
 									</ul>
 									<div class="emph">
-										Hoard received regulatory clearance for the ICO from the Danish Financial Authorities.<br><br>
-										Plasma Dog DApp goes live.
+										<span lang="en">Hoard received regulatory clearance for the ICO from the Danish Financial Authorities.</span><br><br>
+										<span lang="en">Plasma Dog DApp goes live.</span>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm-2 col-node">
 							<div class="milestone active">
-								<div class="name">Core</div>
-								<div class="year muted-2">2019</div>
+								<div class="name" lang="en">Core</div>
+								<div class="year muted-2" lang="en">2019</div>
 								<div class="pointer"><img src="images/roadmap-pointer.svg" alt=""></div>
 								<div class="node"><img src="images/roadmap-node.svg" alt=""></div>
 								<div class="details">
-									<div class="title font-xl">Milestones</div>
+									<div class="title font-xl" lang="en">Milestones</div>
 									<ul class="clean">
-										<li>Q1 SDK for Unity 3D and Unreal 4</li>
-										<li>Q3 Exchange Service</li>
-										<li>Q4 Augmented reality support for wallet</li>
+										<li lang="en">Q1 SDK for Unity 3D and Unreal 4</li>
+										<li lang="en">Q3 Exchange Service</li>
+										<li lang="en">Q4 Augmented reality support for wallet</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm-2 col-node">
 							<div class="milestone">
-								<div class="name">Crowd</div>
-								<div class="year muted-2">2020</div>
+								<div class="name" lang="en">Crowd</div>
+								<div class="year muted-2" lang="en">2020</div>
 								<div class="pointer"><img src="images/roadmap-pointer.svg" alt=""></div>
 								<div class="node"><img src="images/roadmap-node.svg" alt=""></div>
 								<div class="details">
-									<div class="title font-xl">Milestones</div>
+									<div class="title font-xl" lang="en">Milestones</div>
 									<ul class="clean">
-										<li>Q2 Other game engines support</li>
-										<li>Q3 Rating system</li>
-										<li>Q3 Voting system</li>
-										<li>Q3 Community portal</li>
-										<li>Q4 Crowdfunding service</li>
-										<li>Q4 Pawn shop service</li>					
+										<li lang="en">Q2 Other game engines support</li>
+										<li lang="en">Q3 Rating system</li>
+										<li lang="en">Q3 Voting system</li>
+										<li lang="en">Q3 Community portal</li>
+										<li lang="en">Q4 Crowdfunding service</li>
+										<li lang="en">Q4 Pawn shop service</li>					
 									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm-2 col-node">
 							<div class="milestone">
-								<div class="name">Security</div>
-								<div class="year muted-2">2021</div>
+								<div class="name" lang="en">Security</div>
+								<div class="year muted-2" lang="en">2021</div>
 								<div class="pointer"><img src="images/roadmap-pointer.svg" alt=""></div>
 								<div class="node"><img src="images/roadmap-node.svg" alt=""></div>
 								<div class="details">
-									<div class="title font-xl">Milestones</div>
+									<div class="title font-xl" lang="en">Milestones</div>
 									<ul class="clean">
-										<li>Q2 CPU enclaves support</li>
-										<li>Q3 Anti-cheat system</li>
-										<li>Q4 Game engines integration</li>
+										<li lang="en">Q2 CPU enclaves support</li>
+										<li lang="en">Q3 Anti-cheat system</li>
+										<li lang="en">Q4 Game engines integration</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm-2 col-node">
 							<div class="milestone">
-								<div class="name">Deep Learning</div>
-								<div class="year muted-2">2022</div>
+								<div class="name" lang="en">Deep Learning</div>
+								<div class="year muted-2" lang="en">2022</div>
 								<div class="pointer"><img src="images/roadmap-pointer.svg" alt=""></div>
 								<div class="node"><img src="images/roadmap-node.svg" alt=""></div>
 								<div class="details">
-									<div class="title font-xl">Milestones</div>
+									<div class="title font-xl" lang="en">Milestones</div>
 									<ul class="clean">
-										<li>Q3 Big data (items properties mapping)</li>
-										<li>Q4 Deep learning</li>
-										<li>Q4 Data analysis toolkit</li>
+										<li lang="en">Q3 Big data (items properties mapping)</li>
+										<li lang="en">Q4 Deep learning</li>
+										<li lang="en">Q4 Data analysis toolkit</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm-2 col-node">
 							<div class="milestone">
-								<div class="name">Metaverse</div>
-								<div class="year muted-2">2023</div>
+								<div class="name" lang="en">Metaverse</div>
+								<div class="year muted-2" lang="en">2023</div>
 								<div class="pointer"><img src="images/roadmap-pointer.svg" alt=""></div>
 								<div class="node"><img src="images/roadmap-node.svg" alt=""></div>
 								<div class="details">
-									<div class="title font-xl">Milestones</div>
+									<div class="title font-xl" lang="en">Milestones</div>
 									<ul class="clean">
-										<li>Q2 Virtual jobs system</li>
-
-										<li>Q4 Aggregation of all the systems</li>
+										<li lang="en">Q2 Virtual jobs system</li>
+										<li lang="en">Q4 Aggregation of all the systems</li>
 									</ul>
 								</div>
 							</div>
@@ -663,10 +696,13 @@
 			<!--Title-->
 			<div class="row row-delivers">
 				<div class="col-lg-6">
-					<h2>Ecosystem of <span class="color">Games</span></h2>
+					<h2>
+						<span lang="en" data-lang-token="#Games-Head-p01">Ecosystem of</span>
+						<span class="color" lang="en" data-lang-token="#Games-Head-p02">Games</span>
+					</h2>
 				</div>
 				<div class="col-2 col-lg-4 col-lg-offset-2">
-					<p class="muted-2 font-l title-comment">
+					<p class="muted-2 font-l title-comment" lang="en">
 						Contrary to many projects in the Blockchain Gaming Industry, we already have our technology developed and ready. Get to know our recent games.
 					</p>
 				</div>
@@ -682,22 +718,22 @@
 						<img src="images/game-plasma_dog.png" alt="">
 					</div>
 					<div class="col-lg-6 col-game-desc">
-						<h5 class="h5-muted">Delivered title</h5>
-						<h3>Plasma Dog</h3>
-						<div class="muted-2">Architecture</div>
+						<h5 class="h5-muted" lang="en">Delivered title</h5>
+						<h3 lang="en">Plasma Dog</h3>
+						<div class="muted-2" lang="en">Architecture</div>
 						<ul class="bullet">
-							<li>First dApp built on OmiseGO Tesuji Plasma</li>
-							<li>Fast, cheap and secure transactions</li>
-							<li>First more viable Plasma dApp deployed by Rinkeby</li>
+							<li lang="en">First dApp built on OmiseGO Tesuji Plasma</li>
+							<li lang="en">Fast, cheap and secure transactions</li>
+							<li lang="en">First more viable Plasma dApp deployed by Rinkeby</li>
 						</ul>
-						<div class="muted-2">True Ownership</div>
+						<div class="muted-2" lang="en">True Ownership</div>
 						<ul class="bullet">
-							<li>Built-in Ethereum wallet</li>
-							<li>Points and achievements represented by Hoard tokens</li>
-							<li>All tokens stored in a wallet</li>
-							<li>All tokens owned by a player</li>
+							<li lang="en">Built-in Ethereum wallet</li>
+							<li lang="en">Points and achievements represented by Hoard tokens</li>
+							<li lang="en">All tokens stored in a wallet</li>
+							<li lang="en">All tokens owned by a player</li>
 						</ul>
-						<a class="button button-arrow-right" href="http://plasmadog.hoard.exchange" target="_blank">Play game</a>
+						<a class="button button-arrow-right" href="http://plasmadog.hoard.exchange" target="_blank" lang="en">Play game</a>
 					</div>					
 				</div>
 
@@ -706,28 +742,28 @@
 						<img src="images/game-my_memory.jpg" alt="">
 					</div>
 					<div class="col-lg-6 col-game-desc">
-						<h5 class="h5-muted">Integration coming Q2 201</h5>
-						<h3>My Memory of Us</h3>
-						<div class="muted-2">Architecture</div>
+						<h5 class="h5-muted" lang="en">Integration coming Q2 2019</h5>
+						<h3 lang="en">My Memory of Us</h3>
+						<div class="muted-2" lang="en">Architecture</div>
 						<ul class="bullet">
-							<li>Integrated blockchain with previously published title</li>
-							<li>Interoperable content with Plasma Dog</li>
-							<li>Available on Steam</li>
-							<li>IPFS based, decentralized storage for artwork</li>
+							<li lang="en">Integrated blockchain with previously published title</li>
+							<li lang="en">Interoperable content with Plasma Dog</li>
+							<li lang="en">Available on Steam</li>
+							<li lang="en">IPFS based, decentralized storage for artwork</li>
 						</ul>
-						<div class="muted-2">True ownership</div>
+						<div class="muted-2" lang="en">True ownership</div>
 						<ul class="bullet">
-							<li>True Ownership</li>
-							<li>Built-in Ethereum wallet</li>
-							<li>Collectible art puzzles represented by ERC721 tokens</li>
-							<li>All tokens stored in a wallet</li>
-							<li>All tokens owned by a player</li>
+							<li lang="en">True Ownership</li>
+							<li lang="en">Built-in Ethereum wallet</li>
+							<li lang="en">Collectible art puzzles represented by ERC721 tokens</li>
+							<li lang="en">All tokens stored in a wallet</li>
+							<li lang="en">All tokens owned by a player</li>
 						</ul>
 						<!-- <a class="button button-arrow-right">Play game</a> -->
 					</div>					
 				</div>
 				
-				<div class="more muted-2 font-xl">More in Development - Coming Soon!</div>
+				<div class="more muted-2 font-xl" lang="en">More in Development - Coming Soon!</div>
 
 			</div>
 		</div>
@@ -737,15 +773,23 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-5">
-						<h3>Hoard <span class="color">Documentation</span></h3>
-						<p class="font-l">
-							Our team has prepared detailed documents about the Hoard platform and Token sale. Get to know the most in depth details about the project to become 100% sure that it is worth building on!			
+						<h3>
+							<span lang="en" data-lang-token="#Documentation-Head-p01">Hoard</span>
+							<span class="color" lang="en" data-lang-token="#Documentation-Head-p02">Documentation</span>
+						</h3>
+						<p class="font-l" lang="en">
+							Our team has prepared detailed documents about the Hoard platform and Token sale. Get to the most in depth details about the project to become 100% sure that it is worth building on!			
 						</p>
-						<a class="button button-arrow-down" href="files/hoard-whitepaper.pdf">Download Whitepaper</a>						
-						<a class="button button-arrow-down" href="files/hoard-onepager.pdf">Download Onepager</a>						
+						<a class="button button-arrow-down" href="files/hoard-whitepaper.pdf" lang="en">Download Whitepaper</a>						
+						<a class="button button-arrow-down" href="files/hoard-onepager.pdf" lang="en">Download Onepager</a>						
 					</div>
 					<div class="col-lg-7 col-magazine">
-						<img src="images/whitepaper.png" alt="">
+						<div class="documentation-cover">
+							<div class="cover-label label-whitepaper" lang="en">Whitepaper</div>
+							<div class="cover-label label-onepager" lang="en">Onepager</div>
+							<div class="cover-label label-desc" lang="en">Documents about the Hoard platform and Token sale. Get to the most in depth details about the project.</div>
+							<img src="images/whitepaper.png" alt="">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -763,14 +807,17 @@
 			<!--Title-->
 			<div class="row">
 				<div class="col-lg-6">
-					<h2>By game developers<div class="color">for game developers</div></h2>
+					<h2>
+						<span lang="en" data-lang-token="#DevsForDevs-Head-p01">By game developers</span>
+						<div class="color" lang="en" data-lang-token="#DevsForDevs-Head-p02">for game developers</div>
+					</h2>
 				</div>
 				<div class="col-lg-6">
-					<p class="font-l title-comment">
-						In order to integrate True Ownership into a game, developers need to communicate with both the game backend and the blockchain. <br>
+					<p class="font-l title-comment" lang="en" data-lang-token="#DevsForDevs-Comment-p01">
+						In order to integrate True Ownership into a game, developers need to communicate with both the game backend and the blockchain.
 						To make this process easy, secure, and even a bit of fun, Hoard provides an out-of-the-box integration with commonly used game development tools and libraries. 
 					</p>
-					<p class="muted-2 font-l title-comment">
+					<p class="muted-2 font-l title-comment" lang="en" data-lang-token="#DevsForDevs-Comment-p02">
 						We are doing most of the heavy lifting for developers so they can focus on making their games.
 					</p>
 				</div>
@@ -780,41 +827,41 @@
 			<div class="dev-points">
 				<div class="row">
 					<div class="col-lg-3 col-sm-6">					
-						<ul class="bullet"><li>Extensive control panel for token design and specifications, issuance control and administration</li></ul>
+						<ul class="bullet"><li lang="en">Extensive control panel for token design and specifications, issuance control and administration</li></ul>
 					</div>
 					<div class="col-lg-3 col-sm-6">					
-						<ul class="bullet"><li>Setup complex behaviour like renting and escrow with secure smart contracts</li></ul>
+						<ul class="bullet"><li lang="en">Setup complex behaviour like renting and escrow with secure smart contracts</li></ul>
 					</div>
 					<div class="col-lg-3 col-sm-6">					
-						<ul class="bullet"><li>Take extensive advantage of decentralized cryptocurrency exchange</li></ul>
+						<ul class="bullet"><li lang="en">Take extensive advantage of decentralized cryptocurrency exchange</li></ul>
 					</div>
 					<div class="col-lg-3 col-sm-6">					
-						<ul class="bullet"><li>Birds’ eye view of your game’s item and money economy</li></ul>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-3 col-sm-6">					
-						<ul class="bullet"><li>Easy plugin integrations with Unity and Unreal Engine</li></ul>
-					</div>
-					<div class="col-lg-3 col-sm-6">					
-						<ul class="bullet"><li>Include smart wallet and third-party integrations</li></ul>
-					</div>
-					<div class="col-lg-3 col-sm-6">					
-						<ul class="bullet"><li>Abstract the complexities of blockchain technology</li></ul>
-					</div>
-					<div class="col-lg-3 col-sm-6">					
-						<ul class="bullet"><li>Standalone SDK in multiple languages</li></ul>
+						<ul class="bullet"><li lang="en">Birds’ eye view of your game’s item and money economy</li></ul>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-lg-3 col-sm-6">					
-						<ul class="bullet"><li>Secure payment gateways</li></ul>
+						<ul class="bullet"><li lang="en">Easy plugin integrations with Unity and Unreal Engine</li></ul>
 					</div>
 					<div class="col-lg-3 col-sm-6">					
-						<ul class="bullet"><li>Includes secure dashboards</li></ul>
+						<ul class="bullet"><li lang="en">Include smart wallet and third-party integrations</li></ul>
 					</div>
 					<div class="col-lg-3 col-sm-6">					
-						<ul class="bullet"><li>100% free and open source SDK</li></ul>
+						<ul class="bullet"><li lang="en">Abstract the complexities of blockchain technology</li></ul>
+					</div>
+					<div class="col-lg-3 col-sm-6">					
+						<ul class="bullet"><li lang="en">Standalone SDK in multiple languages</li></ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">					
+						<ul class="bullet"><li lang="en">Secure payment gateways</li></ul>
+					</div>
+					<div class="col-lg-3 col-sm-6">					
+						<ul class="bullet"><li lang="en">Includes secure dashboards</li></ul>
+					</div>
+					<div class="col-lg-3 col-sm-6">					
+						<ul class="bullet"><li lang="en">100% free and open source SDK</li></ul>
 					</div>
 					<div class="col-lg-3 col-sm-6">					
 					</div>
@@ -826,7 +873,7 @@
 
 
 
-	<!-- HOW IT IS -->
+	<!-- BLOCKCHAIN SCALABILITY AND GAME -->
 	<section id="scalability">
 	
 		<div class="container dark">
@@ -834,18 +881,18 @@
 			<div class="row">
 				<div class="col-sm-5">
 					<h2>
-						<div>Blockchain scalability and games</div>
+						<div lang="en">Blockchain scalability and games</div>
 					</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-5">
-					<p class="font-xl">
+					<p class="font-xl" lang="en">
 						We’ve implemented a non-fungible solution for Plasma MVP and are building an SDK that will make it easy for game developers to integrate blockchain technology into their games.
 					</p>
 				</div>
 				<div class="col-sm-3 col-sm-offset-2 font-m">
-					<div class="title-comment">Hoard is building the underlying infrastructure to enable true decentralized blockchain games.</div>
+					<div class="title-comment" lang="en">Hoard is building the underlying infrastructure to enable true decentralized blockchain games.</div>
 				</div>
 			</div>
 		
@@ -855,13 +902,17 @@
 
 
 
+
 	<!-- TEAM -->
 	<section id="team">
 	
 		<div class="container team-1">
 			<div class="row">
 				<div class="col-lg-3">
-					<h3>Hoard Experts <div class="color">Team</div></h3>
+					<h3>
+						<span lang="en" data-lang-token="#Team-Head-p01">Hoard Experts </span>
+						<div class="color" lang="en" data-lang-token="#Team-Head-p02">Team</div>
+					</h3>
 				</div>
 				<div class="col-lg-9 col-team">
 
@@ -874,20 +925,22 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
 								<div class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/slawomirbubel/"><img src="images/social-linkedin.svg" alt=""></a></div>
-								<div class="name color">Sławomir Bubel</div>
-								<div class="position muted-2 font-m">Chief Executive Officer</div>
+								<div class="name color" lang="en">Sławomir Bubel</div>
+								<div class="position muted-2 font-m" lang="en">Chief Executive Officer</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Sławomir Bubel</h3>
-								Experienced manager, leader, and team builder with roles since 1995 ranging  from lead artist, to project manager, to director of development at QLOC with more than 100 developers and artists under his management.							
+								<h3 class="color" lang="en">Sławomir Bubel</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Bubel-Bio">
+									Experienced manager, leader, and team builder with roles since 1995 ranging  from lead artist, to project manager, to director of development at QLOC with more than 100 developers and artists under his management.
+								</span>
 							</div>
 						</div></div></div>
 
@@ -899,20 +952,22 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
-								<div class="name">Martin Amor</div>
-								<div class="position muted-2 font-m">Special Advisor, Co-founder</div>
+								<div class="name" lang="en">Martin Amor</div>
+								<div class="position muted-2 font-m" lang="en">Special Advisor, Co-founder</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Martin Amor</h3>
-								Lead programmer of one of the first major MMORPGs, Anarchy Online; technical producer of the Hitman series (3-5) and Mini Ninjas; and technology director at IO Interactive.<br><br>
-								Gaming industry veteran with 18+ years of experience under his belt and roots in the C64 & Amiga demoscene.” to read “Gaming industry veteran with 18+ years of experience under his belt and roots in the C64 and Amiga demoscene.
+								<h3 class="color" lang="en">Martin Amor</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Amor-Bio">
+									Lead programmer of one of the first major MMORPGs, Anarchy Online; technical producer of the Hitman series (3-5) and Mini Ninjas; and technology director at IO Interactive.
+									Gaming industry veteran with 18+ years of experience under his belt and roots in the C64 and Amiga demoscene.
+								</span>
 							</div>
 						</div></div></div>
 
@@ -924,19 +979,22 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
-								<div class="name">Wendell Davis</div>
-								<div class="position muted-2 font-m">Product Design, Co-founder</div>
+								<div class="name" lang="en">Wendell Davis</div>
+								<div class="position muted-2 font-m" lang="en">Product Design, Co-founder</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Wendell Davis</h3>
-								Wendell is a tech entrepreneur with a background in game development. <br><br> He has been in the blockchain space from very early on and has been involved in some of the most well known projects like, Ethereum, Golem, Cosmos, OmiseGO and Streamr.
+								<h3 class="color" lang="en">Wendell Davis</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Davis-Bio">
+										Wendell is a tech entrepreneur with a background in game development.
+										He has been in the blockchain space from very early on and has been involved in some of the most well known projects like, Ethereum, Golem, Cosmos, OmiseGO and Streamr.
+								</span>
 							</div>
 						</div></div></div>
 
@@ -948,21 +1006,23 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
 								<div class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/cyrylmatuszewski/"><img src="images/social-linkedin.svg" alt=""></a></div>
-								<div class="name">Cyryl Matuszewski</div>
-								<div class="position muted-2 font-m">Lead Programmer</div>
+								<div class="name" lang="en">Cyryl Matuszewski</div>
+								<div class="position muted-2 font-m" lang="en">Lead Programmer</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Cyryl Matuszewski</h3>
-								Experienced programmer who has ported and optimized engines such as Unreal Engine 3/4, RED Engine, and MT Framework, as well as many homebrew engines.<br><br>
-								Cyryl was critical to titles such as The Witcher 2, DMC: Definitive edition, Remember Me, and Mortal Kombat X, across most of the major game platforms: PS2, PS3, PS Vita, PS4, Xbox, Xbox 360, Xbox One, and of course PC.
+								<h3 class="color" lang="en">Cyryl Matuszewski</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Matuszewski-Bio">
+									Experienced programmer who has ported and optimized engines such as Unreal Engine 3/4, RED Engine, and MT Framework, as well as many homebrew engines.
+									Cyryl was critical to titles such as The Witcher 2, DMC: Definitive edition, Remember Me, and Mortal Kombat X, across most of the major game platforms: PS2, PS3, PS Vita, PS4, Xbox, Xbox 360, Xbox One, and of course PC.
+								</span>
 							</div>
 						</div></div></div>
 
@@ -974,21 +1034,23 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
 								<div class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/radoslaw-zagorowicz-41042116/"><img src="images/social-linkedin.svg" alt=""></a></div>
-								<div class="name">Radosław Zagórowicz</div>
-								<div class="position muted-2 font-m">Programmer</div>
+								<div class="name" lang="en">Radosław Zagórowicz</div>
+								<div class="position muted-2 font-m" lang="en">Blockchain expert, Co-founder</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Radosław Zagórowicz</h3>
-								Radek is an experienced software engineer with more than a decade of programming experience and deep involvement in projects related to computer graphics processing.<br><br>
-								Radek was co-founder of the Golem idea and worked as Development section manager at IMAPP.											
+								<h3 class="color" lang="en">Radosław Zagórowicz</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Zagorowicz-Bio">
+									Radek is an experienced software engineer with more than a decade of programming experience and deep involvement in projects related to computer graphics processing.
+									Radek was co-founder of the Golem idea and worked as Development section manager at IMAPP.
+								</span>
 							</div>
 						</div></div></div>
 
@@ -1000,21 +1062,23 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
 								<div class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/marek-siemieniuk-69704224"><img src="images/social-linkedin.svg" alt=""></a></div>
-								<div class="name">Marek Siemieniuk</div>
-								<div class="position muted-2 font-m">Programmer</div>
+								<div class="name" lang="en">Marek Siemieniuk</div>
+								<div class="position muted-2 font-m" lang="en">Programmer</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Marek Siemieniuk</h3>
-								A senior programmer with more than 10 years experience in porting games to PC, PS2, PS3, PS4, Xbox 360, Xbox One and Switch platform.<br><br>
-								Marek’s prior experience includes working on CD Project Red and QLOC. He has been involved in porting titles such as The Witcher 2, Ultra Street Fighter IV, Resident Evil 6 and Dragon’s Dogma: Dark Arisen.
+								<h3 class="color" lang="en">Marek Siemieniuk</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Siemieniuk-Bio">
+									A senior programmer with more than 10 years experience in porting games to PC, PS2, PS3, PS4, Xbox 360, Xbox One and Switch platform.
+									Marek’s prior experience includes working on CD Project Red and QLOC. He has been involved in porting titles such as The Witcher 2, Ultra Street Fighter IV, Resident Evil 6 and Dragon’s Dogma: Dark Arisen.
+								</span>
 							</div>
 						</div></div></div>
 
@@ -1026,21 +1090,23 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
 								<div class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/kurpiewskadaria/"><img src="images/social-linkedin.svg" alt=""></a></div>
-								<div class="name">Daria Kurpiewska</div>
-								<div class="position muted-2 font-m">Programmer</div>
+								<div class="name" lang="en">Daria Kurpiewska</div>
+								<div class="position muted-2 font-m" lang="en">Programmer</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Daria Kurpiewska</h3>
-								Daria is a programmer with expertise in developing and optimizing rendering engines. She was involved in porting titles such as Injustice 2 and GetEven. She has also previously worked on facial motion capture software for Platige Image.<br><br>
-								Prior to this, she gained experience with blockchain technology at OmiseGO where she was prototyping a payments platform.
+								<h3 class="color" lang="en">Daria Kurpiewska</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Kurpiewska-Bio">
+									Daria is a programmer with expertise in developing and optimizing rendering engines. She was involved in porting titles such as Injustice 2 and GetEven. She has also previously worked on facial motion capture software for Platige Image.
+									Prior to this, she gained experience with blockchain technology at OmiseGO where she was prototyping a payments platform.
+								</span>
 							</div>
 						</div></div></div>
 
@@ -1052,20 +1118,22 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
-								<div class="name">Rafał Wydra</div>
-								<div class="position muted-2 font-m">Programmer</div>
+								<div class="name" lang="en">Rafał Wydra</div>
+								<div class="position muted-2 font-m" lang="en">Programmer</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Rafał Wydra</h3>
-								Rafał has been working in video game development for more than 15 years, specializing in optimizing games and rewriting rendering engines. He has worked on many games including Injustice 2, Gears of War and Mortal Combat X and has a strong technical background in PC, PlayStation and Xbox game engines.<br><br>
-								The most exciting thing to him about Hoard is the possibility that many people will be using it to create games.
+								<h3 class="color" lang="en">Rafał Wydra</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Wydra-Bio">
+									Rafał has been working in video game development for more than 15 years, specializing in optimizing games and rewriting rendering engines. He has worked on many games including Injustice 2, Gears of War and Mortal Combat X and has a strong technical background in PC, PlayStation and Xbox game engines.
+									The most exciting thing to him about Hoard is the possibility that many people will be using it to create games.
+								</span>
 							</div>
 						</div></div></div>
 
@@ -1074,7 +1142,7 @@
 							<div class="person person-more">
 								<img src="images/team-more.svg" alt="">							
 								<a class="more"><span class="plus">+</span>6</a>
-								<div class="name color"><a>+ Show more Team Members</a></div>
+								<div class="name color"><a lang="en">+ Show more Team Members</a></div>
 							</div>
 						</div>
 					
@@ -1086,20 +1154,22 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
 								<div class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/michal-majchrzak-dev/" alt=""><img src="images/social-linkedin.svg" alt=""></a></div>
-								<div class="name">Michał Majchrzak</div>
-								<div class="position muted-2 font-m">Programmer</div>
+								<div class="name" lang="en">Michał Majchrzak</div>
+								<div class="position muted-2 font-m" lang="en">Programmer</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
 								<h3 class="color">Michał Majchrzak</h3>
-								Michał is an experienced backend developer and a self-proclaimed big data wrangler. He’s excited to introduce blockchain technology into video games as he believes it is one of the best ways to manage the huge amount of data that games generate.
+								<span class="long-desc" lang="en" data-lang-token="#Majchrzak-Bio">
+									Michał is an experienced backend developer and a self-proclaimed big data wrangler. He’s excited to introduce blockchain technology into video games as he believes it is one of the best ways to manage the huge amount of data that games generate.
+								</span>
 							</div>
 						</div></div></div>
 					
@@ -1110,19 +1180,21 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
-								<div class="name">Kuba Lesisz</div>
-								<div class="position muted-2 font-m">Programmer, Co-founder</div>
+								<div class="name" lang="en">Kuba Lesisz</div>
+								<div class="position muted-2 font-m" lang="en">Programmer, Co-founder</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Kuba Lesisz</h3>
-								Kuba is a systems architect and full Microsoft stack developer. He gained experience in software development and honed an awareness of macroeconomics working in the financial industry sector.
+								<h3 class="color" lang="en">Kuba Lesisz</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Lesisz-Bio">
+									Kuba is a systems architect and full Microsoft stack developer. He gained experience in software development and honed an awareness of macroeconomics working in the financial industry sector.
+								</span>
 						</div>
 						</div></div></div>
 					
@@ -1133,20 +1205,22 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
 								<div class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/bochnio/" alt=""><img src="images/social-linkedin.svg" alt=""></a></div>
-								<div class="name">Bartłomiej Ochnio</div>
-								<div class="position muted-2 font-m">Game Designer</div>
+								<div class="name" lang="en">Bartłomiej Ochnio</div>
+								<div class="position muted-2 font-m" lang="en">Game Designer</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Bartłomiej Ochnio</h3>
-								Bartek is an experienced programmer and game designer who previously worked as lead programmer for game development company Juggler Games. He believes that integrating blockchain technology into video games presents a whole new world of opportunities and challenges.
+								<h3 class="color" lang="en">Bartłomiej Ochnio</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Ochnio-Bio">
+									Bartek is an experienced programmer and game designer who previously worked as lead programmer for game development company Juggler Games. He believes that integrating blockchain technology into video games presents a whole new world of opportunities and challenges.
+								</span>
 							</div>
 						</div></div></div>
 					
@@ -1157,20 +1231,22 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
 								<div class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/mikkelthykjaerjoergensen/" alt=""><img src="images/social-linkedin.svg" alt=""></a></div>
-								<div class="name">Mikkel Thykjær Jørgensen</div>
-								<div class="position muted-2 font-m">Legal</div>
+								<div class="name" lang="en">Mikkel Thykjær Jørgensen</div>
+								<div class="position muted-2 font-m" lang="en">Legal</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Mikkel Thykjær Jørgensen</h3>
-								Mikkel is a co-founder of HEJM Law and has many years of experience as a legal advisor in transactions concerning corporate law, investments and acquisitions. Mikkel is a former external university lecturer in corporate law.								
+								<h3 class="color" lang="en">Mikkel Thykjær Jørgensen</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Mikkel-Bio">
+									Mikkel is a co-founder of HEJM Law and has many years of experience as a legal advisor in transactions concerning corporate law, investments and acquisitions. Mikkel is a former external university lecturer in corporate law.								
+								</span>
 							</div>
 						</div></div></div>
 					
@@ -1181,20 +1257,22 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
 								<div class="linkedin"><a target="_blank" href="http://linkedin.com/in/marta-byrne-b7664115b" alt=""><img src="images/social-linkedin.svg" alt=""></a></div>
-								<div class="name">Marta Byrne</div>
-								<div class="position muted-2 font-m">Administration</div>
+								<div class="name" lang="en">Marta Byrne</div>
+								<div class="position muted-2 font-m" lang="en">Administration</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Marta Byrne</h3>
-								Marta is an MBA educated and seasoned start up veteran. Marta brings more than 16 years of real world experience in HR, administration, and operations to help drive and shape the digital economies of the future.
+								<h3 class="color" lang="en">Marta Byrne</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Byrne-Bio">
+									Marta is an MBA educated and seasoned start up veteran. Marta brings more than 16 years of real world experience in HR, administration, and operations to help drive and shape the digital economies of the future.
+								</span>
 							</div>
 						</div></div></div>
 					
@@ -1205,21 +1283,23 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
 								<div class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/cbobrobison" alt=""><img src="images/social-linkedin.svg" alt=""></a></div>
-								<div class="name">Christopher Robison</div>
-								<div class="position muted-2 font-m">Community Manager</div>
+								<div class="name" lang="en">Christopher Robison</div>
+								<div class="position muted-2 font-m" lang="en">Community Manager</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Christopher Robison</h3>
-								Chris has driven communications and community management in both the startup world and as the head of communications for global operations at a Fortune 500 based in Seattle.
-								He has been involved in cryptocurrency and blockchain since 2012.
+								<h3 class="color" lang="en">Christopher Robison</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Robison-Bio">
+									Chris has driven communications and community management in both the startup world and as the head of communications for global operations at a Fortune 500 based in Seattle.
+									He has been involved in cryptocurrency and blockchain since 2012.
+								</span>
 							</div>
 						</div></div></div>
 						
@@ -1230,10 +1310,14 @@
 		</div>
 
 
+
 		<div class="container team-2">
 			<div class="row">
 				<div class="col-lg-3">
-					<h3>Hoard Experts <div class="color">Advisors</div></h3>
+					<h3>
+						<span lang="en" data-lang-token="#Advisors-Head-p01">Hoard Experts</span>
+						<div class="color" lang="en" data-lang-token="#Advisors-Head-p02">Advisors</div>
+					</h3>
 				</div>
 				<div class="col-lg-9 col-team">
 
@@ -1246,19 +1330,21 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
-								<div class="name">Vansa Chatikavanij</div>
-								<div class="position muted-2 font-m">Managing Director, OmiseGO</div>
+								<div class="name" lang="en">Vansa Chatikavanij</div>
+								<div class="position muted-2 font-m" lang="en">Managing Director, OmiseGO</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Vansa Chatikavanij</h3>
-								Vansa serves as an advisor to Loxley Public Company Ltd. and Sky Visual Imaging Venture At OmiseGO, she is responsible for ensuring efficient project delivery, establishment and realization of the long term business strategy, business development and partnerships.
+								<h3 class="color" lang="en">Vansa Chatikavanij</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Vansa-Bio">
+									Vansa serves as an advisor to Loxley Public Company Ltd. and Sky Visual Imaging Venture At OmiseGO, she is responsible for ensuring efficient project delivery, establishment and realization of the long term business strategy, business development and partnerships.
+								</span>
 							</div>
 						</div></div></div>
 					
@@ -1269,19 +1355,21 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
-								<div class="name">Steffen Toksvig</div>
-								<div class="position muted-2 font-m">VP of Engineering/Spotlight</div>
+								<div class="name" lang="en">Steffen Toksvig</div>
+								<div class="position muted-2 font-m" lang="en">VP of Engineering/Spotlight</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Steffen Toksvig</h3>
-								Steffen Toksvig is VP of Engineering/Spotlight, the platform that powers as much as 40% of games coming out today.
+								<h3 class="color" lang="en">Steffen Toksvig</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Toksvig-Bio">
+									Steffen Toksvig is VP of Engineering/Spotlight, the platform that powers as much as 40% of games coming out today.
+								</span>
 							</div>
 						</div></div></div>
 
@@ -1292,19 +1380,21 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
-								<div class="name">Julian Zawistowski</div>
-								<div class="position muted-2 font-m">CEO / Co-founder, Golem</div>
+								<div class="name" lang="en">Julian Zawistowski</div>
+								<div class="position muted-2 font-m" lang="en">CEO / Co-founder, Golem</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Julian Zawistowski</h3>
-								Julian is an economist by trade. He is fascinated with blockchain technology, as well as sociology and the economics of decentralized systems.
+								<h3 class="color" lang="en">Julian Zawistowski</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Zawistowski-Bio">
+									Julian is an economist by trade. He is fascinated with blockchain technology, as well as sociology and the economics of decentralized systems.
+								</span>
 							</div>
 						</div></div></div>
 
@@ -1315,19 +1405,21 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
-								<div class="name">Piotr Janiuk</div>
-								<div class="position muted-2 font-m">CTO / Co-founder, Golem</div>
+								<div class="name" lang="en">Piotr Janiuk</div>
+								<div class="position muted-2 font-m" lang="en">CTO / Co-founder, Golem</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Piotr Janiuk</h3>
-								Piotr designed and developed the first Golem POC and helped with the design of the high level architecture of the Golem platform as well as the Golem crowdfunding contract.
+								<h3 class="color" lang="en">Piotr Janiuk</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Janiuk-Bio">
+									Piotr designed and developed the first Golem POC and helped with the design of the high level architecture of the Golem platform as well as the Golem crowdfunding contract.
+								</span>
 							</div>
 						</div></div></div>
 
@@ -1338,19 +1430,21 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
-								<div class="name">Jeremy Petreman</div>
-								<div class="position muted-2 font-m">Senior Artist/Designer, Playdead</div>
+								<div class="name" lang="en">Jeremy Petreman</div>
+								<div class="position muted-2 font-m" lang="en">Senior Artist/Designer, Playdead</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Jeremy Petreman</h3>
-								Jeremy Petreman is a veteran designer who has worked in the Gaming Industry for over 17 years leading various aspects of many AAA productions.
+								<h3 class="color" lang="en">Jeremy Petreman</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Petreman-Bio">
+									Jeremy Petreman is a veteran designer who has worked in the Gaming Industry for over 17 years leading various aspects of many AAA productions.
+								</span>
 							</div>
 						</div></div></div>
 
@@ -1361,19 +1455,21 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
-								<div class="name">Janos Flösser</div>
-								<div class="position muted-2 font-m">Senior Partner, Promentum Equity</div>
+								<div class="name" lang="en">Janos Flösser</div>
+								<div class="position muted-2 font-m" lang="en">Senior Partner, Promentum Equity</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Janos Flösser</h3>
-								He is original founder and Managing Director of Io Interactive, Chief Creative Officer of Square Enix Europe, and is the latest Senior Partner at Promentum Equity Partners, a Copenhagen based technology fund investing in 21st century technology companies at the TIME sector.
+								<h3 class="color" lang="en">Janos Flösser</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Janos-Bio">
+									He is original founder and Managing Director of Io Interactive, Chief Creative Officer of Square Enix Europe, and is the latest Senior Partner at Promentum Equity Partners, a Copenhagen based technology fund investing in 21st century technology companies at the TIME sector.
+								</span>
 							</div>
 						</div></div></div>
 
@@ -1384,20 +1480,22 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
-								<div class="name">Rasmus Højengaard</div>
-								<div class="position muted-2 font-m">Chief Design Officer, DICE and Brain+</div>
+								<div class="name" lang="en">Rasmus Højengaard</div>
+								<div class="position muted-2 font-m" lang="en">Chief Design Officer, DICE and Brain+</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Rasmus Højengaard</h3>
-								Rasmus is a games industry veteran with 20 years experience. <br><br>
-								He worked at IO Interactive, Realtime Worlds, Crytek and DICE and involved in games like Battlefield, Mirrors Edge, Battlefront, Warface, Crysis and Hitman.
+								<h3 class="color" lang="en">Rasmus Højengaard</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Rasmus-Bio">
+									Rasmus is a games industry veteran with 20 years experience.
+									He worked at IO Interactive, Realtime Worlds, Crytek and DICE and involved in games like Battlefield, Mirrors Edge, Battlefront, Warface, Crysis and Hitman.
+								</span>
 							</div>
 						</div></div></div>
 
@@ -1408,21 +1506,23 @@
 									<div class="details bio-trigger">
 										<div class="overlay animated fadeIn"></div>
 										<div class="desc animated fadeIn">
-											<div class="button button-border-light">Show bio</div>
+											<div class="button button-border-light" lang="en">Show bio</div>
 										</div>
 									</div>
 								</div>
 								<div class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/bochan-kim/" alt=""><img src="images/social-linkedin.svg" alt=""></a></div>
-								<div class="name">Bochan Kim</div>
-								<div class="position muted-2 font-m">Videogame Producer and Publishing Executive</div>
+								<div class="name" lang="en">Bochan Kim</div>
+								<div class="position muted-2 font-m" lang="en">Videogame Producer and Publishing Executive</div>
 							</div>
 						</div>
 						
 						<div class="modal modal-white modal-bio fade" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
 							<div class="modal-body bio-content">
-								<h3 class="color">Bochan Kim</h3>
-								Bochan has been involved in game publishing and product development since the late 1990s.  <br><br>
-								After spending ten years at Capcom, driving numerous game development and business initiatives, Bochan now helps different worlds (teams and companies) connect and work together to achieve great new things.								
+								<h3 class="color" lang="en">Bochan Kim</h3>
+								<span class="long-desc" lang="en" data-lang-token="#Bochan-Bio">
+									Bochan has been involved in game publishing and product development since the late 1990s.
+									After spending ten years at Capcom, driving numerous game development and business initiatives, Bochan now helps different worlds (teams and companies) connect and work together to achieve great new things.								
+								</span>
 							</div>
 						</div></div></div>
 						
@@ -1437,13 +1537,13 @@
 
 
 
-
-
 	<!-- NEWS -->
 	<section id="news">
 		<div class="container">
 		
-			<h2>Hoard <span class="color">Latest News</span></h2>
+			<h2>
+				<span lang="en" data-lang-token="#News-Head-p01">Hoard</span>
+				<span class="color" lang="en" data-lang-token="#News-Head-p02">Latest News</span></h2>
 
 			<div class="row">
 
@@ -1491,7 +1591,8 @@
 	<section id="newsletter">
 		<div class="container">
 			<h2>
-				Stay Updated. <span class="color">Sign Up for the Newsletter.</span>
+				<span lang="en" data-lang-token="#Newsletter-Head-p01">Stay Updated.</span>
+				<span class="color" lang="en" data-lang-token="#Newsletter-Head-p02">Sign Up for the Newsletter.</span>
 			</h2>
 			<div class="newsletterWrapper">
 				<form action="https://exchange.us16.list-manage.com/subscribe/post-json?u=721bab1b8df508b002d0f302c&amp;id=93d961f5fe&c=?" method="get" class="" novalidate>
@@ -1500,7 +1601,7 @@
 							<div class="col-md-5">
 								
 								<div class="input-newsLetter">
-									<input type="email" name="EMAIL" id="EMAIL" placeholder="Enter your email">
+									<input type="email" name="EMAIL" id="EMAIL" placeholder="Enter your email" lang="en">
 								</div>
 								<div class="alertContainer">
 									<div id="errorSubscribe" class="alert alert-danger"></div>
@@ -1509,15 +1610,13 @@
 								
 							</div>
 							<div class="col-md-3">
-								<button id="btnSubmit" class="btn-sendEmail button" type="submit">Sign up</button>
+								<button id="btnSubmit" class="btn-sendEmail button" type="submit" lang="en">Sign up</button>
 						</div>
 					</div>
 				</form>
 			</div>
 		</div>
 	</section>
-
-
 
 
 
@@ -1528,19 +1627,23 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-copy">
-						<span>&copy; 2019 Hoard</span> <a href="privacy.html">Privacy Policy</a> <a href="cookies.html">Terms and Condition</a> <a class="email">hello[at]hoard[dot]exchange</a>
+						<span>&copy; 2019 Hoard</span> <a href="privacy.html" lang="en">Privacy Policy</a> <a href="cookies.html" lang="en">Terms and Condition</a> <a class="email">hello[at]hoard[dot]exchange</a>
 					</div>
 					<div class="col-md-4 col-social">
 						<a target="_blank" href="https://facebook.com/hoardexchange"><img src="images/social-facebook.svg" alt=""></a>
+						<a target="_blank" href="https://github.com/hoardexchange"><img src="images/social-github.svg" alt=""></a>
+						<a target="_blank" href="https://bitcointalk.org/index.php?action=profile;u=2579857"><img src="images/social-bitcointalk.png" alt=""></a>									
 						<a target="_blank" href="https://www.reddit.com/r/HoardEx"><img src="images/social-reddit.svg" alt=""></a>
 						<a target="_blank" href="https://twitter.com/@hoardexchange"><img src="images/social-twitter.svg" alt=""></a>
 						<a target="_blank" href="https://t.me/@hoardexchange"><img src="images/social-telegram.svg" alt="" style="max-height:18px;"></a>
+						<a target="_blank" href="https://discord.gg/KqV3fXT"><img src="images/social-discord.svg" alt=""></a>
 						<a target="_blank" href="https://linkedin.com/company/hoardexchange"><img src="images/social-linkedin.svg" alt=""></a>
 						<a target="_blank" href="https://www.youtube.com/channel/UCPOTg9f_-N29fCFmWVMgfjg"><img src="images/social-youtube.svg" alt=""></a>
 						<br><br><br>
-						<a target="_blank" href="https://blog.hoard.exchange/" class="textlink"><span>Hoard's Blog</span> <img src="images/social-medium.svg" alt="" style="max-height:16px;"></a>
+						<a target="_blank" href="https://blog.hoard.exchange/" class="textlink"><span lang="en">Hoard's Blog</span> <img src="images/social-medium.svg" alt="" style="max-height:16px;"></a>
 					</div>
 				</div>
+
 			</div>
 		</div>
 
@@ -1569,6 +1672,15 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/owlcarousel/owl.carousel.min.js"></script>
 	<script src="js/animate-it/css3-animate-it.js"></script>
+
+	<script src="js/jquery-lang/js.cookie.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/jquery-lang/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/jquery-lang/lang-ru.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/jquery-lang/lang-jp.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/jquery-lang/lang-ch.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/jquery-lang/lang-ko.js" charset="utf-8" type="text/javascript"></script>
+	<script src="js/jquery-lang/lang-ar.js" charset="utf-8" type="text/javascript"></script>
+	
 	<script src="js/main.js"></script> 
 
 
