@@ -812,9 +812,9 @@ ul.clean li {
 }
 .logo {
 	float: left;
-	height: 40px;
-	width: 120px;
-	margin-top: 54px;
+	height: 34.22222222222px;
+	width: 106.666666666px;
+	margin-top: 55px;
 }
 .navbar-toggle {
 	margin-top: 38px;
@@ -826,14 +826,18 @@ ul.clean li {
 
 /* Menu */
 .menu {
-	margin-left: 50px;
+	margin-left: 30px;
 	margin-top: 53px;
 	font-weight: 600;
 }
 .menu li a {
-	padding: 10px 14px;
+	padding: 10px 12px;
 	margin-left: 10px;
 	color: #fff;
+}
+.menu li a.out-link {
+/*	color: #000;
+	font-weight: 900;*/
 }
 .menu > li > a:focus, 
 .menu > li > a:hover {
@@ -858,6 +862,10 @@ ul.clean li {
 }
 .menu .button:hover {
 	background: #CE0D17;
+}
+.menu .button-light:hover {
+	background: #fff;
+	color: #CE0D17 !important;
 }
 .menu .button-border {
 	margin-right: 10px;
@@ -1062,6 +1070,11 @@ ul.clean li {
 
 
 
+/* BOUNTIES */
+.col-bounties .h5-muted {
+	color: #fff;
+	margin-top: 30px;
+}
 
 
 
