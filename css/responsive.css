@@ -707,6 +707,9 @@
     .collapsing {
         overflow: hidden!important;
     }
+    body > footer > div > div > div > div.col-md-4.col-social {
+        display: block;
+    }
 }
 @media (min-width: 1200px) {
     .navbar-collapse.collapse {
@@ -749,7 +752,7 @@
 
 /* Mobile menu */
 @media (max-width: 1200px) {
-	#menu-collapse > ul {
+	#menu-collapse > ul > #navbar-left{
 		position: fixed;
 		text-align: left;
 		width: 100%;
@@ -757,6 +760,9 @@
 		margin: 0;
 		background: #000;		
 		padding-bottom: 40px;
+    }
+    #menu-collapse > ul.menu.nav.navbar-nav.navbar-right{
+		display: none;
 	}
 	#menu-collapse ul:not(.menu-actions) {
 		padding-top: 100px;

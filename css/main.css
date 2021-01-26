@@ -855,7 +855,11 @@ ul.clean li {
 	margin-left: 2px;
 	vertical-align: 19%;
 }
-
+#menu-collapse > ul.menu.nav.navbar-nav.navbar-right > li > a {
+    margin: 0px 0px 0px 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
 .menu .button {
 	margin-top: -3px;
@@ -995,9 +999,9 @@ ul.clean li {
 .banner .tokens {
 	margin-top: 23px;
 }
-.partners {
+/* .partners {
 	padding-top: 60px;
-}
+} */
 .mainpage .partners {
 	margin-top: -140px;
 }
@@ -2113,6 +2117,9 @@ footer .links .col-social a {
 }
 footer .links .col-social a:first-child {
 	margin-left: 0px;
+}
+body > footer > div > div > div > div.col-md-4.col-social {
+    display: none;
 }
 footer .links .textlink {
 	font-weight: normal !important;
