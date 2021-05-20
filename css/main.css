@@ -255,8 +255,8 @@ button {
 
 
 .button-light {
-	background: #fff;
-	color: #CE0D17 !important;
+	background: #CE0D17;
+	color: #fff !important;
 }
 .button-light:hover {
 	background: #000;
